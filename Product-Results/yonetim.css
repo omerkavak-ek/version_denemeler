@@ -87,33 +87,87 @@ body.dark {
     /* Keep primary unless specified otherwise */
 
     /* Sayfa Renkleri - Dark Mode */
-    --app-body-bg: #121212;
-    --header-bg: #1E1E1E;
-    --sidebar-bg: #1E1E1E;
-    --card-bg: #2C2C2C;
-    --text-primary: #E0E0E0;
-    --text-secondary: #B0B0B0;
-    --border-color: #333333;
+    --app-body-bg: #121E2D;
+    --header-bg: #1A2A3D;
+    --sidebar-bg: #1A2A3D;
+    --card-bg: #1A2A3D;
+    --text-primary: #FFFFFF;
+    --text-secondary: #FFFFFF;
+    --border-color: #2C3E50;
 
     /* Buton Renkleri - Dark Mode */
-    --btn-secondary-bg: #333333;
-    --btn-secondary-color: #E0E0E0;
+    --btn-secondary-bg: #2C3E50;
+    --btn-secondary-color: #FFFFFF;
     --btn-third-bg: #444444;
     --btn-outline-bg: transparent;
-    --btn-outline-color: #E0E0E0;
+    --btn-outline-color: #FFFFFF;
     --btn-outline-border-color: #444444;
 
     /* Input Renkleri - Dark Mode */
-    --input-border-default: #444444;
-    --input-bg-default: #2C2C2C;
-    --input-bg-disabled: #1F1F1F;
-    --input-text: #E0E0E0;
+    --input-border-default: #2C3E50;
+    --input-bg-default: #121E2D;
+    --input-bg-disabled: #2C3E50;
+    --input-text: #FFFFFF;
 
     /* Card overrides */
-    --bs-card-bg: #2C2C2C;
-    --bs-card-title-color: #E0E0E0;
-    --bs-card-text-color: #B0B0B0;
-    --shadow-card: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    --bs-card-bg: #1A2A3D;
+    --bs-card-title-color: #FFFFFF;
+    --bs-card-text-color: #FFFFFF;
+    --shadow-card: none;
+}
+
+body.dark .card {
+    border: 1px solid var(--border-color);
+}
+
+body.dark .card-text,
+body.dark .card-title,
+body.dark .form-label,
+body.dark .form-control,
+body.dark .form-select,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark span,
+body.dark div,
+body.dark table,
+body.dark thead,
+body.dark tbody,
+body.dark tr,
+body.dark th,
+body.dark td,
+body.dark .form-check-label {
+    color: #FFFFFF !important;
+}
+
+body.dark .light-logo {
+    display: none !important;
+}
+
+body.dark .dark-logo {
+    display: block !important;
+}
+
+body.dark .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+    background-color: var(--input-bg-default);
+    border-color: var(--input-border-default);
+    color: #FFFFFF !important;
+}
+
+body.dark .form-control:focus,
+body.dark .form-select:focus {
+    background-color: var(--input-bg-default);
+    border-color: var(--brand-primary);
+    color: #FFFFFF !important;
 }
 
 /* Global Transitions */
