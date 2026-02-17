@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loglar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="loglar.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="mini-logo-container">
+                <img src="../logo/ekol_e.png" alt="Ekol Mini Logo" class="mini-logo">
+            </div>
+            <div class="sidebar-logo-container">
+                <img src="../logo/ekol.png" alt="Ekol Logo" class="sidebar-logo">
+            </div>
+            <button class="hamburger-btn" id="sidebarToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="sherlock.html" class="nav-item">
+                <img src="sherlock.png" alt="Sherlock"
+                    style="width: 20px; height: 20px; border-radius: 50%; object-fit: cover;">
+                <span>Sherlock</span>
+            </a>
+            <a href="yonetim.html" class="nav-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Yönetim Paneli</span>
+            </a>
+
+            <!-- Loglar Dropdown -->
+            <div class="nav-item nav-item-parent expanded" id="menu-loglar">
+                <div class="nav-item-content">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span>Loglar</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="nav-submenu show" data-parent="menu-loglar">
+                <a href="loglar-sorgu.html" class="nav-submenu-item">
+                    <span>Sorgu Logları</span>
+                </a>
+                <a href="loglar-bot.html" class="nav-submenu-item">
+                    <span>Bot Konuşma</span>
+                </a>
+            </div>
+
+            <!-- Dashboard -->
+            <a href="dashboard.html" class="nav-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <!-- Raporlar Dropdown -->
+            <div class="nav-item nav-item-parent" id="menu-raporlar">
+                <div class="nav-item-content">
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <span>Raporlar</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="nav-submenu" data-parent="menu-raporlar">
+                <a href="raporlar-genel.html" class="nav-submenu-item">
+                    <span>Genel Metrikler</span>
+                </a>
+                <a href="raporlar-kullanici.html" class="nav-submenu-item">
+                    <span>Kullanıcı Bazlı</span>
+                </a>
+                <a href="raporlar-musteri.html" class="nav-submenu-item">
+                    <span>Müşteri Bazlı</span>
+                </a>
+                <a href="raporlar-adres.html" class="nav-submenu-item">
+                    <span>Adres Bazlı</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-right">
+                <div class="theme-toggle">
+                    <button class="hamburger-btn" aria-label="Light Mode" title="Light Mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <button class="hamburger-btn" aria-label="Dark Mode" title="Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="language-selector">
+                    <span>Türkçe</span>
+                </div>
+                <div class="user-info">
+                    <i class="fa-solid fa-circle-user" style="font-size: 24px; color: #9A9B9D;"></i>
+                    <span class="user-email">mustafa.ozkaya@ekol.com</span>
+                </div>
+                <button class="fullscreen-btn" aria-label="Tam Ekran" title="Tam Ekran">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <h1>Loglar</h1>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="main-content">
+
+        <!-- Arama ve Filtreleme -->
+        <h2>Arama ve Filtreleme</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="row m--1 items-end">
+                    <div class="col-12 col-lg-3 p-1">
+                        <div>
+                            <label for="logDateStart" class="form-label">Başlangıç Tarihi</label>
+                            <input type="date" class="form-control" id="logDateStart">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 p-1">
+                        <div>
+                            <label for="logDateEnd" class="form-label">Bitiş Tarihi</label>
+                            <input type="date" class="form-control" id="logDateEnd">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 p-1">
+                        <div>
+                            <label for="logUser" class="form-label">Kullanıcı</label>
+                            <select class="form-select" id="logUser">
+                                <option selected>Tümü</option>
+                                <option value="vendor">Satıcı</option>
+                                <option value="user">Kullanıcı</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 p-1">
+                        <div>
+                            <label for="logType" class="form-label">İşlem Tipi</label>
+                            <select class="form-select" id="logType">
+                                <option selected>Tümü</option>
+                                <option value="query">Sipariş Sorgu</option>
+                                <option value="video">Video İzleme</option>
+                                <option value="download">Video İndirme</option>
+                                <option value="chat">Bot Konuşma</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sorgu Logları Tablosu -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Sorgu Logları</h3>
+                                <span class="card-text text-muted">Kim, hangi siparişi, hangi tarihte sorguladı</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Tarih</th>
+                                        <th>Saat</th>
+                                        <th>Kullanıcı</th>
+                                        <th>Kullanıcı Tipi</th>
+                                        <th>Sipariş No</th>
+                                        <th>İşlem</th>
+                                        <th>Durum</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17.02.2026</td>
+                                        <td>14:32</td>
+                                        <td>ahmet.yilmaz@vendor.com</td>
+                                        <td><span class="badge badge-info">Satıcı</span></td>
+                                        <td>SIP-20260217-0042</td>
+                                        <td>Sipariş Sorgu</td>
+                                        <td><span class="badge badge-success">Başarılı</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.02.2026</td>
+                                        <td>13:18</td>
+                                        <td>mustafa.ozkaya@ekol.com</td>
+                                        <td><span class="badge badge-primary">Satıcı</span></td>
+                                        <td>SIP-20260217-0039</td>
+                                        <td>Video İzleme</td>
+                                        <td><span class="badge badge-success">Başarılı</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.02.2026</td>
+                                        <td>11:45</td>
+                                        <td>zeynep.kara@vendor.com</td>
+                                        <td><span class="badge badge-info">Satıcı</span></td>
+                                        <td>SIP-20260216-0108</td>
+                                        <td>Video İndirme</td>
+                                        <td><span class="badge badge-danger">Başarısız</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16.02.2026</td>
+                                        <td>16:52</td>
+                                        <td>ali.demir@ekol.com</td>
+                                        <td><span class="badge badge-primary">Satıcı</span></td>
+                                        <td>SIP-20260216-0095</td>
+                                        <td>Sipariş Sorgu</td>
+                                        <td><span class="badge badge-success">Başarılı</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bot Konuşma Logları Tablosu -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Bot Konuşma Logları</h3>
+                                <span class="card-text text-muted">Bota sorulan sorular, verilen cevaplar,
+                                    kullanıcı, tarih ve saat bazlı</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Tarih</th>
+                                        <th>Saat</th>
+                                        <th>Kullanıcı</th>
+                                        <th>Soru</th>
+                                        <th>Cevap</th>
+                                        <th>Durum</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17.02.2026</td>
+                                        <td>14:30</td>
+                                        <td>ahmet.yilmaz@vendor.com</td>
+                                        <td>SIP-0042 siparişimin durumu nedir?</td>
+                                        <td>Siparişiniz şu anda paketleme aşamasında...</td>
+                                        <td><span class="badge badge-success">Yanıtlandı</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.02.2026</td>
+                                        <td>13:15</td>
+                                        <td>mustafa.ozkaya@ekol.com</td>
+                                        <td>Bugünkü sevkiyat durumunu özetle</td>
+                                        <td>Bugün toplam 47 sipariş sevk edilmiştir...</td>
+                                        <td><span class="badge badge-success">Yanıtlandı</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16.02.2026</td>
+                                        <td>09:42</td>
+                                        <td>zeynep.kara@vendor.com</td>
+                                        <td>Paketleme videosunu göster</td>
+                                        <td>Bu fonksiyona erişim yetkiniz bulunmamaktadır.</td>
+                                        <td><span class="badge badge-warning">Yetki Hatası</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="loglar.js"></script>
+</body>
+
+</html>

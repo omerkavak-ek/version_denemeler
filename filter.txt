@@ -1,0 +1,158 @@
+Filtre Kartı
+
+konum:
+Filtre kartı Ana Tablonun üstünde bulunmalıdır.
+Filtre kartının card-header sınıfı bulunmaz. Cardın dışında h2 etiketli "Arama ve Filtreleme" başlığı bulunmalıdır.
+Kullanıcının filtreleri sınıflara ayrılır. Bu sınıflar metin arama ve diğer filtre türleridir.
+Metin arama filtreler, Filtreleme alanında bulunan input-group'un içindeki dropdown butonunda bulunmalıdır.
+Filtre kartında kullanıcı aksini istese bile her zaman input-group ve Gelişmiş Filtreler butonu bulunmalıdır. Bunun haricinde hiç bir yapı bulunmaz. 
+Kullanıcın istediği tüm filtreler(arama filtreleri hariç) filter-expanded id'sine sahip row içinde olmalıdır.
+input-group col-lg-10, Gelişmiş Filtreler butonu col-lg-2 kolonları içinde olmalıdır.
+Gelişmiş Filtreler butonuna basıldıktan sonra filter-expanded id'sine sahip row görünür olmalıdır.
+Gelişmiş Filtreler butonuna basılmadıkça filter-expanded id'sine sahip row görünmez olmalıdır.
+Bununla ilgli js kodları zaten mevcuttur.
+Bu satır birden fazla satırlara ayrılabilir.
+Kullanıcı kaç adet filtre istediyse buna göre satırlara ve sütunlara ayıracağız.
+Her zaman en alttaki satırda 3 adet kolon en sağda bulunmaldır ve
+bu kolonlarda sırasıyla Kaydet, Şablon ve Filtrele butonları bulunmalıdır.
+Kesinlikle Şablon, Kaydet ve Filtrele butonları bulunmalıdır.
+
+Kaydet, Şablon ve Filtrele butonları dahil 8'den fazla filtre olursa 2 satırlık olmalıdır.
+Bu durumda filtre-expanded id'sine sahip row 2 satırlık olmalıdır.
+1. Satırda 4 adet kolon olmalıdır.
+2. Satırda 4 adet kolon olmalıdır. Kaydet, Şablon ve Filtrele butonları bu kolonda en sağda bulunmalıdır.
+9 adet filtre varsa 2 satırlık olmalıdır.
+1. Satırda 4 adet kolon olmalıdır.
+2. Satırda 5 adet kolon olmalıdır. Kaydet, Şablon ve Filtrele butonları bu kolonda en sağda bulunmalıdır.
+10 adet filtre varsa 2 satırlık olmalıdır.
+1. Satırda 5 adet kolon olmalıdır.
+2. Satırda 5 adet kolon olmalıdır. Kaydet, Şablon ve Filtrele butonları bu kolonda en sağda bulunmalıdır.
+Filtreleme alanındaki tüm kolonların p-1 sınıfı bulunmalıdır.
+
+filtrelemede kaydet şablon ve filtrele butonları ve selectinin olduğu rowda kolonlardaki öğeler en alta hizalanmalıdır.
+
+Filtreleme içinde veya başka bir yerde eğerki radius ve checkbox varsa radiuslar bir rowda col-auto ınıfları altında,
+checkboxlar ise bir rowda col-auto ınıfları altında olmalıdır. Bu rowlar bir sütun içinde olabilirler.
+
+html yapısı:
+
+<!-- Filtreleme -->
+       <div class="card">
+           <div class="card-body">
+
+               <!-- Arama -->
+               <div class="row mb-0 m--1">
+                   <div class="col p-1">
+                       <div class="input-group mb-0">
+                           <select class="form-select ig-radius-left" aria-label="Arama Kriteri">
+                               <option value="referansNo" selected>Referans Numarası</option>
+                               <option value="antBeyNo">Ant. Bey. No.</option>
+                               <option value="plaka">Plaka</option>
+                               <option value="ozetBeyanNo">Özet Beyan No</option>
+                           </select>
+                           <input
+                               type="text"
+                               class="form-control"
+                               placeholder="Referans Numarası, Ant. Bey. No., Plaka veya Özet Beyan No bilgilerine göre arama yapabilirsiniz."
+                               aria-label="Input with dropdown and button"
+                           />
+                           <button type="button" class="btn btn-icon-square btn-icon-outline-secondary mb-0 ig-radius-right" aria-label="Ara" title="Ara"><i class="fa-solid fa-search"></i></button>
+                       </div>
+                   </div>
+                   <div class="col-auto p-1">
+                       <button id="filter-expanded-button" class="btn btn-outline" type="button" style="border-width: 0px; padding: 0px; font-size: 12px;">
+                           Gelişmiş Filtreler <i class="fa-solid fa-chevron-down"></i>
+                       </button>
+                   </div>
+               </div>
+
+               <!-- Gelişmiş Filtreler -->
+               <div class="filter-expanded">
+                   <!-- Seçim Filtreleri -->
+                   <div class="row m--1 mt-1 items-end">
+                       <div class="col-12 col-lg-4 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Çatı Organizasyon</label>
+                               <select class="form-select" aria-label="Çatı Organizasyon">
+                                   <option value="" selected>Seçiniz</option>
+                                   <option value="ekol">Ekol Lojistik A.Ş.</option>
+                                   <option value="other1">Diğer Organizasyon 1</option>
+                                   <option value="other2">Diğer Organizasyon 2</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-4 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Firma</label>
+                               <select class="form-select" aria-label="Firma">
+                                   <option value="" selected>Seçiniz</option>
+                                   <option value="acme">ACME A.Ş.</option>
+                                   <option value="xyz">XYZ Dış Tic.</option>
+                                   <option value="techcorp">TechCorp Ltd.</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-4 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Gönderici</label>
+                               <select class="form-select" aria-label="Gönderici">
+                                   <option value="" selected>Seçiniz</option>
+                                   <option value="globex">Globex Ltd.</option>
+                                   <option value="initech">Initech GmbH</option>
+                                   <option value="umbrella">Umbrella Corp.</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- Tarih Filtreleri -->
+                   <div class="row m--1 mt-1 items-end">
+                       <div class="col-12 col-lg-4 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Özet Beyan Tarihi</label>
+                               <input type="date" class="form-control" aria-label="Özet Beyan Tarihi" />
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-4 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Ant. Bey. Tarihi</label>
+                               <input type="date" class="form-control" aria-label="Ant. Bey. Tarihi" />
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-4 p-1">
+                           <div class="row m--1">
+                               <div class="col-12 col-lg-4 p-1">
+                                   <div class="filter-field">
+                                       <label class="form-label"></label>
+                                       <select class="form-select" aria-label="Şablon">
+                                           <option value="" selected>Şablon</option>
+                                           <option value="1">Çatı Organizasyon, Firma</option>
+                                           <option value="2">Tarih Filtreleri</option>
+                                           <option value="3">Boş Şablon</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-lg-4 p-1">
+                                   <div class="filter-field">
+                                       <label class="form-label"></label>
+                                       <button class="btn btn-outline w-100" type="button">
+                                           <i class="fa-solid fa-copy"></i>
+                                           Kaydet
+                                       </button>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-lg-4 p-1">
+                                   <div class="filter-field">
+                                       <label class="form-label"></label>
+                                       <button class="btn btn-primary w-100" type="button">
+                                           <i class="fa-solid fa-filter"></i>
+                                           Filtrele
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>

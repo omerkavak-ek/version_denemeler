@@ -1,0 +1,205 @@
+row sınıfı satır sınıfıdır.
+column sınıfları sütun sınıflarıdır ve aşağıdaki gibi kullanılır:
+/* Grid System - Column Classes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 24px;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.666666%;
+    padding-left: 12px; 
+    padding-right: 12px;
+}
+
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.666666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-11 {
+    flex: 0 0 auto;
+    width: 91.66666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Custom Column Class used only for 5 columns */
+.col-lg-20 {
+    flex: 0 0 auto;
+    width: 20%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-lg-60 {
+    flex: 0 0 auto;
+    width: 60%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-lg-40{
+    flex: 0 0 auto;
+    width: 40%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: auto;
+}
+
+.col{
+    flex: 1 0 0;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+kolonların her birine default olarak col-12 sınıfını ver. .col veya .col-auto sınıfını alanlar sadece o sınıfa sahip olmalıdır. 
+Diğer tüm kolonların sınıfları col-12 sınıfını almalıdır.
+
+Bir rowdaki kolonların toplamı 12 olmalıdır. Yani col-lg-x + col-lg-y = 12 olmalıdır. 
+Kaç adet kolona ayrılıyorsa kolon sınıflarının sondaki sayıların toplamı 12 olmalıdır.
+
+Satırları genelde 3'lü 4'lü 5'li veya 6'lı ayırmalısın.
+Bir satırda eğerki 5 adet kolon olması gerekiyorsa bu durumda col-lg-20 sınıfını kullanmalısın.
+
+.col ve .col-auto sınıfları bir rowda birlikte kullanılır. Özellikle card-header sınıfında bu yapıya ihtiyaç varsa kullanmalısın..
+.col solda kalır, .col-auto sağda kalır. Bu durumda .col-auto sınıfı olan kolon sağa yaslanır.
+.card-header içindeki .col ve .col-auto kolonları bir row içinde olacak şekilde sıralanır: önce .col, sonra .col-auto.
+
+Aşağıdakiler çok önemlidir:
+
+Eğerki bir row card body içindeyse bu row'a m--1 sınıfını ver.
+m--1 sınıfını almış row'ların içinde bulunan kolonlara ise p-1 sınıfını ver.
+p-1 sınıfını almış kolonların içindeki row'lara m--1 sınıfını ver.
+her m--1 sınıfı verdiğin row'un içindeki kolonlara p-1 sınıfını ver.
+Card yapısının doğrudan veya dolaylı olarak içinde olmayan rowlara m--1 sınıfını verme. Direkt o row'a bağlı kolonlara da p-1 sınıfını verme.
+Bir card genişliği yüzde 100 ise bir row içinde olmamalıdır.
+bir rowda input alanları ile birlikte checkbox radius veya buton varsa o row'a items-end sınıfını ver
+
+kartlarda cart-header'da kart başlığının altındaki yazıya card-text ve text-muted sınıflarını ver.
+Kart içindeki alt başlıklar her zaman card-subtitle sınıfını almalıdır.
+
+Kartlar içindeki rowlar arasında en üstteki row dışında diğerlerine mt-1 sınıfını ver.
+
+Bir row içinde hem buton hem de form-control gibi form alanları bulunuyorsa row'a items-end sınıfını ver.
+Aşağıda bazı kart yapıları mevcuttur: Kullanman gereken kart yapısını aşağıdan öğren ve talimatlarına uyarak yapmalısın.
+
+Hızlı Bilgi Kartları
+Konum:
+Hızlı bilgi kartları her zaman sayfanın en üstünde bulunmalıdır. 
+Kullanıcı özellikle farklı bir yerde istemediği müddetçe sayfanın en üstünde bulunmalıdır.
+Her zaman row ve kolonların içinde bulunmalıdır.
+3'erli 4'erli 5'erli veya 6'erli gruplara ayrılmalıdır.
+8 adet kart varsa 2 satır 4 kolon şeklinde olmalıdır.
+
+Bilgi kartları yapısı:
+Hızlı Bilgi kartlarında her zaman en üstte Büyük bir ikon, altında card başlığı, altında ise Kartın göstermek istediği bilgi bulunmalıdır.
+Bu karlarda buton, dropdown, input-group vb. componentler bulunmaz.
+card-text sınıfında kartın ana bilgisi yazılmalıdır.
+card-big-text sınıfında kartın en önemli sayısal bilgisi yazılmalıdır.
+en alttaki card-text ve text-muted sınıflarına sahip öğelerde ise ilgili karttaki sayısal bilginin geçen yıla/aya/güne göre değişimleri yüzdesel yazılmalıdır.
+Bu yüzdesel değişiklik text-success veya text-danger sınıfını artış veya azalışa göre alacaktır.
+
+@class.txt dosyasında 5 adet bilgi kartının bulununduğu bir yapı mevcuttur. Bu yapıda row ve kolon yapıları kullanılmış ve her bir kart bir kolon içinde yer almaktadır. Kartlar row içindeki kolonlarda bulunur.
+
+
+Hızlı Eylem Butonları
+
+Bu butonların üzerinde kart yapısının dışında bulunan h2 sınıfındaki bir Hızlı Eylemler başlığı bulunmalıdır.
+Hızlı Eylemlerde sadece bir adet buton bulunmalıdır. Bu buton kart içinde olamamlıdır. 
+Sadece bu Kartlarda bir kart yapısı bulunmaz. Kolonların içinde buton bulunur.
+İçerisinde sadece outline butonlar(sadece btn-outline sınıfı) bulunmalıdır.
+Kart başlığı, alt başlık vesaire bulunmaz.
+
+
+Filtre Kartı
+
+Filtreleme varsa bulunur, aksi halde bulunmaz.
+Tüm detayları @filter.txt dosyasında bulabilirsin.
+Filtre kartı tablo dışında diğer tüm kartlar oluşturulduktan sonra oluşturulmalıdır.
+
+Tablo Kartı
+
+Tüm detayları @table.txt dosyasından bulabilirsin.
+Tablo kartları diğer kartlar oluşturulduktan sonra oluşturulmalıdır.
+
+Diğer kartlar
+Buradaki standart kartlar dışındaki kartlardır. Custom kartlardır. 
+Kullanıcın isteğidi görünüm için en uygun rowlara ve kolonlara göre oluşturulmalıdır.
+
+
+
+      

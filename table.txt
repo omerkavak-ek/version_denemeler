@@ -1,0 +1,710 @@
+Bir tablo her zaman aşağıdaki 3 sınıftan oluşmalıdır.
+
+Ana Tablo (Tabloda işlemler yapmak için)
+
+Ana tablonun bulunduğu kart bir rowun içerisinde olmamalıdır.
+Ana tablo 3 parçadan oluşmalıdır.
+Ana tablonun card-header sınıfında bir row olmalıdır.
+  Bu row .col ve .col-auto sınıflarından oluşmalıdır.
+  .col sınıfında card-text bulunur. bu card-text mb-0 sınıfını da alır ve içinde Tablonun filtrelemeleri yazılmalıdır.
+  Js ile dinamik olarak oluşturma.
+  Bu card-textiçinde strong elementi de vardır ve bu element filtrelemedeki önemli kısmı barındırır.
+
+  card-header'daki row da .col-auto sınıfı da bulunur.
+  .col-auto sınıfında butonlar bulunmalıdır.
+  Bu butonlardan default olarak her zaman 2 adettir: Sütunları Göster/Gizle ve Excel aktar.
+  Bu butonlar'dan en sağdaki Sütunları Göster/ Gizle butonu, solundaki ise Excel aktar butonu olmalıdır.
+  Tablo ile ilgili diğer butonlar bu butonların solunda doğru eklenmelidir.
+  Bu butonlar'dan her biri kare-ikon buton olmak zorundadır.
+
+Tablonun alt kısmında raw class'ı olmalıdır.
+İlgili kodları ve yapıyı aşağıda bulabilirsin.
+
+tablonun ortasında bir row içerisinde tablo tablo-responsive class'ı olmalıdır.
+İlgili kodları ve yapıyı Aşağıda bulabilirsin.
+
+Seçim ve Aksiyonlar sütunu
+Seçim sütunu her zaman en sol sütunda bulunmalıdır.
+Aksiyonlar sütunu her zaman en sağ sütunda bulunmalıdır.
+Seçim sütununda checkbox olmalıdır.
+Aksiyonlar sütununda kare ikonlar olmalıdır.
+Maksimum 3 adet kare ikon bulunmalıdır.
+3'den fazla kare ikon olursa "3 nokta üst üste" dropdown ikon butonu bulunmalıdır.
+Dropdown menüde diğer butonların isimleri yazmalıdır.
+Sütunun ismi "Eylemler" olmalıdır.
+
+
+Veri Tablosu (Tablodaki büyük verileri göstermek için)
+Ana tablodan farklı olarak card-header içinde card-title da bulunur.
+Başlığında ne tablosu olduğu yazsın.
+Başlığın altında ise Tablonun açıklaması kısaca yazsın.
+Ayrıca card-header içindeki row içindeki .col-auto sınıfında sadece bir adet buton bulunur ve bu buton dropdown olarak "3 nokta üst üste" ikon butonudur.
+card-header içindeki 3 nokta dropdown butonunda dropdown-menü de excel'e aktar butonu bulunmalıdır. Bu buton secondary buton olmalıdır.
+Seçim sütunu bulunmaz, Aksiyonlar Sütununda butonlar bulunabilir.
+Minimum yüzde 40 genişliğe sahip olmalıdır. Eğer Kolon yapısında bulunuyorsa, buna göre kolon sınıfını seçmelisin.
+En az 6 adet kolon bulunmalıdır.
+Toplam ve pagination bulunmalıdır.
+
+
+Hızlı İşlem Tablosu (Tablodaki küçük az satırları verileri göstermek için)
+Başlığında ne tablosu olduğu yazsın.
+Başlığın altında ise Tablonun açıklaması kısaca yazsın.
+card-header 2. Tablo gibi olmalıdır.
+Veri tablosunun alt kısmında pagination bulunan row class'ı olmamalıdır.
+Bir row içerisinde bulunabilir ama verilen kolon sınıfı minimum yüzde 30 genişlikte olmalıdır. Kolon sınıfını buna göre seçmelisin.
+Seçim sütunu bulunmaz, Aksiyonlar butonu bulunabilir.
+Toplam bulunur fakat pagination bulunmaz.
+Toplam bilgisi aynı main tablodaki gibi bir row içerisinde bulunmalıdır.
+
+Tablo yapısının HTML ve CSS sınıfları aşağıda verilmiştir:
+
+<!-- Ana Tablo -->
+       <div class="card">
+           <div class="card-header">
+               <div class="row align-items-center mb-0 m--1">
+                   <div class="col p-1">
+                       <div class="card-text mb-0">
+                           Filtreler: <strong>Çatı Organizasyon</strong> seçildi.
+                       </div>
+                   </div>
+                   <div class="col-auto p-1">
+                    <div class="dropdown">
+                            <button id="table-settings-btn" class="btn btn-icon-square btn-icon-outline dropdown-toggle dropdown-toggle-icon table-settings-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Sütunları Göster/Gizle" aria-label="Sütunları Göster/Gizle">
+                                <i class="fa-solid fa-sliders-h"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-columns"></ul>
+                        </div>
+                   </div>
+                   <div class="col-auto p-1">
+                       <button type="button" class="btn btn-icon-square btn-icon-outline" title="Excel Aktar" aria-label="Excel Aktar">
+                           <i class="fa-solid fa-file-excel"></i>
+                       </button>
+                   </div>
+                    <div class="col-auto p-1">
+                    <div class="dropdown">
+                            <button
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-text"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                İşlem Yap <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="btn-Stoktan-Dusum.html">Stoktan Düşüm</a></li>
+                                <li><a class="dropdown-item" href="btn-Stoktan-Satis.html">Stoktan Satış</a></li>
+                                <li><a class="dropdown-item" href="btn-Ardiye-Hesapla.html">Ardıye Hesapla</a></li>
+                                <li><a class="dropdown-item" href="btn-Tasfiyeye-Birak.html">Tasfiyeye Bırak</a></li>
+                                <li><a class="dropdown-item" href="btn-Gumruk-Raporu.html">Gümrük Denetim Raporu</a></li>
+                            </ul>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="card-body">
+               <div class="row mb-1">
+                   <div class="col-12">
+                       <div class="table-responsive">
+                           <table id="mainTable" class="table table-striped mb-1">
+                               <thead>
+                                   <tr>
+                                       <th scope="col" class="checkbox-col" data-column-index="0" data-role="select">
+                                           <input type="checkbox" id="selectAll" aria-label="Tümünü Seç">
+                                       </th>
+                                       <th data-column-index="1">Referans</th>
+                                       <th data-column-index="23">Antrepo Beyannamesi</th>
+                                       <th data-column-index="25">Ant. Bey. Tarihi</th>
+                                       <th data-column-index="2">Çatı Organizasyon</th>
+                                       <th data-column-index="3">Firma</th>
+                                       <th data-column-index="4">Gönderici</th>
+                                       <th data-column-index="5">Palet Sayısı</th>
+                                       <th data-column-index="6">Giren Kap</th>
+                                       <th data-column-index="7">Çıkan Kap</th>
+                                       <th data-column-index="8">Stok Kap</th>
+                                       <th data-column-index="9">Giren Kg</th>
+                                       <th data-column-index="10">Çıkan Kg</th>
+                                       <th data-column-index="11">Stok Kg</th>
+                                       <th data-column-index="12">Giren Pw</th>
+                                       <th data-column-index="13">Çıkan Pw</th>
+                                       <th data-column-index="14">Stok Pw</th>
+                                       <th data-column-index="15">Giren Hacim</th>
+                                       <th data-column-index="16">Çıkan Hacim</th>
+                                       <th data-column-index="17">Stok Hacim</th>
+                                       <th data-column-index="18">Plaka</th>
+                                       <th data-column-index="19">Özet Beyan No</th>
+                                       <th data-column-index="20">Özet Beyan Tarihi</th>
+                                       <th data-column-index="21" style="display: none;">Firma Kart ID</th>
+                                       <th data-column-index="22" style="display: none;">Giriş No</th>
+                                       <th data-column-index="24" style="display: none;">Antrepoda Bekleme Süresi</th>
+                                       <th data-column-index="26" style="display: none;">Defter Sıra No</th>
+                                       <th data-column-index="27" style="display: none;">Defter Tarihi</th>
+                                       <th data-column-index="28" style="display: none;">Mal Tanımı</th>
+                                       <th data-column-index="29" style="display: none;">Mal Değeri</th>
+                                       <th data-column-index="30" style="display: none;">Döviz</th>
+                                       <th data-column-index="31" style="display: none;">Teminat Bedeli</th>
+                                       <th data-column-index="32" style="display: none;">Adres</th>
+                                       <th data-column-index="33" style="display: none;">Alıcı Sipariş No</th>
+                                       <th data-column-index="34" style="display: none;">Beyanname PO Nr</th>
+                                       <th scope="col" class="actions-col" data-column-index="35" data-role="actions">Eylemler</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td scope="row" class="checkbox-col" data-column-index="0">
+                                           <input type="checkbox" aria-label="Satır Seç">
+                                       </td>
+                                       <td data-column-index="1">REF-0001</td>
+                                       <td data-column-index="23">ANT123456</td>
+                                       <td data-column-index="25">01.12.2025</td>
+                                       <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                       <td data-column-index="3">ACME A.Ş.</td>
+                                       <td data-column-index="4">Globex Ltd.</td>
+                                       <td data-column-index="5">24</td>
+                                       <td data-column-index="6">150</td>
+                                       <td data-column-index="7">50</td>
+                                       <td data-column-index="8">100</td>
+                                       <td data-column-index="9">3500</td>
+                                       <td data-column-index="10">1200</td>
+                                       <td data-column-index="11">2300</td>
+                                       <td data-column-index="12">3400</td>
+                                       <td data-column-index="13">1150</td>
+                                       <td data-column-index="14">2250</td>
+                                       <td data-column-index="15">45,5</td>
+                                       <td data-column-index="16">15,2</td>
+                                       <td data-column-index="17">30,3</td>
+                                       <td data-column-index="18">34 ABC 100</td>
+                                       <td data-column-index="19">OZB-2025-001</td>
+                                       <td data-column-index="20">01.12.2025</td>
+                                       <td data-column-index="21" style="display: none;">FK-2025-001</td>
+                                       <td data-column-index="22" style="display: none;">GIR-0001</td>
+                                       <td data-column-index="24" style="display: none;">12 gün</td>
+                                       <td data-column-index="26" style="display: none;">DSN-001</td>
+                                       <td data-column-index="27" style="display: none;">01.12.2025</td>
+                                       <td data-column-index="28" style="display: none;">Elektronik Eşya</td>
+                                       <td data-column-index="29" style="display: none;">120.000</td>
+                                       <td data-column-index="30" style="display: none;">EUR</td>
+                                       <td data-column-index="31" style="display: none;">15.000</td>
+                                       <td data-column-index="32" style="display: none;">İstanbul, Türkiye</td>
+                                       <td data-column-index="33" style="display: none;">PO-2025-001</td>
+                                       <td data-column-index="34" style="display: none;">BPO-2025-001</td>
+                                       <td class="actions-col" data-column-index="35">
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td scope="row" class="checkbox-col" data-column-index="0">
+                                           <input type="checkbox" aria-label="Satır Seç">
+                                       </td>
+                                       <td data-column-index="1">REF-0002</td>
+                                       <td data-column-index="23">ANT234567</td>
+                                       <td data-column-index="25">02.12.2025</td>
+                                       <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                       <td data-column-index="3">XYZ Dış Tic.</td>
+                                       <td data-column-index="4">ACME A.Ş.</td>
+                                       <td data-column-index="5">32</td>
+                                       <td data-column-index="6">200</td>
+                                       <td data-column-index="7">75</td>
+                                       <td data-column-index="8">125</td>
+                                       <td data-column-index="9">2800</td>
+                                       <td data-column-index="10">1050</td>
+                                       <td data-column-index="11">1750</td>
+                                       <td data-column-index="12">2600</td>
+                                       <td data-column-index="13">980</td>
+                                       <td data-column-index="14">1620</td>
+                                       <td data-column-index="15">38,2</td>
+                                       <td data-column-index="16">14,1</td>
+                                       <td data-column-index="17">24,1</td>
+                                       <td data-column-index="18">34 BCD 101</td>
+                                       <td data-column-index="19">OZB-2025-002</td>
+                                       <td data-column-index="20">02.12.2025</td>
+                                       <td data-column-index="21" style="display: none;">FK-2025-002</td>
+                                       <td data-column-index="22" style="display: none;">GIR-0002</td>
+                                       <td data-column-index="24" style="display: none;">9 gün</td>
+                                       <td data-column-index="26" style="display: none;">DSN-002</td>
+                                       <td data-column-index="27" style="display: none;">02.12.2025</td>
+                                       <td data-column-index="28" style="display: none;">Tekstil Ürünü</td>
+                                       <td data-column-index="29" style="display: none;">80.000</td>
+                                       <td data-column-index="30" style="display: none;">USD</td>
+                                       <td data-column-index="31" style="display: none;">10.000</td>
+                                       <td data-column-index="32" style="display: none;">Ankara, Türkiye</td>
+                                       <td data-column-index="33" style="display: none;">PO-2025-002</td>
+                                       <td data-column-index="34" style="display: none;">BPO-2025-002</td>
+                                       <td class="actions-col" data-column-index="35">
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td scope="row" class="checkbox-col" data-column-index="0">
+                                           <input type="checkbox" aria-label="Satır Seç">
+                                       </td>
+                                       <td data-column-index="1">REF-0003</td>
+                                       <td data-column-index="23">ANT345678</td>
+                                       <td data-column-index="25">03.12.2025</td>
+                                       <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                       <td data-column-index="3">ACME A.Ş.</td>
+                                       <td data-column-index="4">Initech GmbH</td>
+                                       <td data-column-index="5">28</td>
+                                       <td data-column-index="6">180</td>
+                                       <td data-column-index="7">60</td>
+                                       <td data-column-index="8">120</td>
+                                       <td data-column-index="9">5200</td>
+                                       <td data-column-index="10">1800</td>
+                                       <td data-column-index="11">3400</td>
+                                       <td data-column-index="12">5000</td>
+                                       <td data-column-index="13">1750</td>
+                                       <td data-column-index="14">3250</td>
+                                       <td data-column-index="15">52,3</td>
+                                       <td data-column-index="16">18,5</td>
+                                       <td data-column-index="17">33,8</td>
+                                       <td data-column-index="18">34 CDE 102</td>
+                                       <td data-column-index="19">OZB-2025-003</td>
+                                       <td data-column-index="20">03.12.2025</td>
+                                       <td data-column-index="21" style="display: none;">FK-2025-003</td>
+                                       <td data-column-index="22" style="display: none;">GIR-0003</td>
+                                       <td data-column-index="24" style="display: none;">7 gün</td>
+                                       <td data-column-index="26" style="display: none;">DSN-003</td>
+                                       <td data-column-index="27" style="display: none;">03.12.2025</td>
+                                       <td data-column-index="28" style="display: none;">Makine Parçası</td>
+                                       <td data-column-index="29" style="display: none;">150.000</td>
+                                       <td data-column-index="30" style="display: none;">EUR</td>
+                                       <td data-column-index="31" style="display: none;">18.000</td>
+                                       <td data-column-index="32" style="display: none;">İzmir, Türkiye</td>
+                                       <td data-column-index="33" style="display: none;">PO-2025-003</td>
+                                       <td data-column-index="34" style="display: none;">BPO-2025-003</td>
+                                       <td class="actions-col" data-column-index="35">
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td scope="row" class="checkbox-col" data-column-index="0">
+                                           <input type="checkbox" aria-label="Satır Seç">
+                                       </td>
+                                       <td data-column-index="1">REF-0004</td>
+                                       <td data-column-index="23">ANT456789</td>
+                                       <td data-column-index="25">04.12.2025</td>
+                                       <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                       <td data-column-index="3">TechCorp Ltd.</td>
+                                       <td data-column-index="4">Globex Ltd.</td>
+                                       <td data-column-index="5">36</td>
+                                       <td data-column-index="6">220</td>
+                                       <td data-column-index="7">80</td>
+                                       <td data-column-index="8">140</td>
+                                       <td data-column-index="9">4200</td>
+                                       <td data-column-index="10">1500</td>
+                                       <td data-column-index="11">2700</td>
+                                       <td data-column-index="12">4100</td>
+                                       <td data-column-index="13">1450</td>
+                                       <td data-column-index="14">2650</td>
+                                       <td data-column-index="15">48,7</td>
+                                       <td data-column-index="16">17,3</td>
+                                       <td data-column-index="17">31,4</td>
+                                       <td data-column-index="18">34 DEF 103</td>
+                                       <td data-column-index="19">OZB-2025-004</td>
+                                       <td data-column-index="20">04.12.2025</td>
+                                       <td data-column-index="21" style="display: none;">FK-2025-004</td>
+                                       <td data-column-index="22" style="display: none;">GIR-0004</td>
+                                       <td data-column-index="24" style="display: none;">10 gün</td>
+                                       <td data-column-index="26" style="display: none;">DSN-004</td>
+                                       <td data-column-index="27" style="display: none;">04.12.2025</td>
+                                       <td data-column-index="28" style="display: none;">Otomotiv Parçası</td>
+                                       <td data-column-index="29" style="display: none;">95.000</td>
+                                       <td data-column-index="30" style="display: none;">USD</td>
+                                       <td data-column-index="31" style="display: none;">12.000</td>
+                                       <td data-column-index="32" style="display: none;">Bursa, Türkiye</td>
+                                       <td data-column-index="33" style="display: none;">PO-2025-004</td>
+                                       <td data-column-index="34" style="display: none;">BPO-2025-004</td>
+                                       <td class="actions-col" data-column-index="35">
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td scope="row" class="checkbox-col" data-column-index="0">
+                                           <input type="checkbox" aria-label="Satır Seç">
+                                       </td>
+                                       <td data-column-index="1">REF-0005</td>
+                                       <td data-column-index="23">ANT567890</td>
+                                       <td data-column-index="25">05.12.2025</td>
+                                       <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                       <td data-column-index="3">ACME A.Ş.</td>
+                                       <td data-column-index="4">Umbrella Corp.</td>
+                                       <td data-column-index="5">26</td>
+                                       <td data-column-index="6">165</td>
+                                       <td data-column-index="7">55</td>
+                                       <td data-column-index="8">110</td>
+                                       <td data-column-index="9">3100</td>
+                                       <td data-column-index="10">1100</td>
+                                       <td data-column-index="11">2000</td>
+                                       <td data-column-index="12">3000</td>
+                                       <td data-column-index="13">1050</td>
+                                       <td data-column-index="14">1950</td>
+                                       <td data-column-index="15">42,8</td>
+                                       <td data-column-index="16">14,5</td>
+                                       <td data-column-index="17">28,3</td>
+                                       <td data-column-index="18">34 EFG 104</td>
+                                       <td data-column-index="19">OZB-2025-005</td>
+                                       <td data-column-index="20">05.12.2025</td>
+                                       <td data-column-index="21" style="display: none;">FK-2025-005</td>
+                                       <td data-column-index="22" style="display: none;">GIR-0005</td>
+                                       <td data-column-index="24" style="display: none;">8 gün</td>
+                                       <td data-column-index="26" style="display: none;">DSN-005</td>
+                                       <td data-column-index="27" style="display: none;">05.12.2025</td>
+                                       <td data-column-index="28" style="display: none;">Gıda Ürünü</td>
+                                       <td data-column-index="29" style="display: none;">65.000</td>
+                                       <td data-column-index="30" style="display: none;">EUR</td>
+                                       <td data-column-index="31" style="display: none;">8.000</td>
+                                       <td data-column-index="32" style="display: none;">Antalya, Türkiye</td>
+                                       <td data-column-index="33" style="display: none;">PO-2025-005</td>
+                                       <td data-column-index="34" style="display: none;">BPO-2025-005</td>
+                                       <td class="actions-col" data-column-index="35">
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td scope="row" class="checkbox-col" data-column-index="0">
+                                           <input type="checkbox" aria-label="Satır Seç">
+                                       </td>
+                                       <td data-column-index="1">REF-0006</td>
+                                       <td data-column-index="23">ANT678901</td>
+                                       <td data-column-index="25">06.12.2025</td>
+                                       <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                       <td data-column-index="3">XYZ Dış Tic.</td>
+                                       <td data-column-index="4">Initech GmbH</td>
+                                       <td data-column-index="5">30</td>
+                                       <td data-column-index="6">190</td>
+                                       <td data-column-index="7">70</td>
+                                       <td data-column-index="8">120</td>
+                                       <td data-column-index="9">4800</td>
+                                       <td data-column-index="10">1700</td>
+                                       <td data-column-index="11">3100</td>
+                                       <td data-column-index="12">4600</td>
+                                       <td data-column-index="13">1650</td>
+                                       <td data-column-index="14">2950</td>
+                                       <td data-column-index="15">55,2</td>
+                                       <td data-column-index="16">19,8</td>
+                                       <td data-column-index="17">35,4</td>
+                                       <td data-column-index="18">34 FGH 105</td>
+                                       <td data-column-index="19">OZB-2025-006</td>
+                                       <td data-column-index="20">06.12.2025</td>
+                                       <td data-column-index="21" style="display: none;">FK-2025-006</td>
+                                       <td data-column-index="22" style="display: none;">GIR-0006</td>
+                                       <td data-column-index="24" style="display: none;">11 gün</td>
+                                       <td data-column-index="26" style="display: none;">DSN-006</td>
+                                       <td data-column-index="27" style="display: none;">06.12.2025</td>
+                                       <td data-column-index="28" style="display: none;">Kimyasal Madde</td>
+                                       <td data-column-index="29" style="display: none;">180.000</td>
+                                       <td data-column-index="30" style="display: none;">USD</td>
+                                       <td data-column-index="31" style="display: none;">22.000</td>
+                                       <td data-column-index="32" style="display: none;">Kocaeli, Türkiye</td>
+                                       <td data-column-index="33" style="display: none;">PO-2025-006</td>
+                                       <td data-column-index="34" style="display: none;">BPO-2025-006</td>
+                                       <td class="actions-col" data-column-index="35">
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                       </td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="row align-items-center mb-0">
+                   <div class="col">
+                       <div class="card-text mb-0">
+                           <strong>1420</strong> Toplam
+                       </div>
+                   </div>
+                   <div class="col-auto">
+                       <div class="row align-items-center mb-0">
+                           <div class="col">
+                               <ul class="pagination">
+                                   <li class="page-item">
+                                       <a class="page-link" href="#" aria-label="Previous">
+                                           <span aria-hidden="true">&laquo;</span>
+                                       </a>
+                                   </li>
+                                   <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                   <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                   <li class="page-item">
+                                       <a class="page-link" href="#" aria-label="Next">
+                                           <span aria-hidden="true">&raquo;</span>
+                                       </a>
+                                   </li>
+                               </ul>
+                           </div>
+                           <div class="col-auto">
+                               <select class="form-select pagination-select" aria-label="Sayfa başına kayıt">
+                                   <option value="10" selected>10</option>
+                                   <option value="20">20</option>
+                                   <option value="50">50</option>
+                                   <option value="100">100</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        
+        <!-- Veri Tablosu -->
+        <div class="row mb-3">
+            <div class="col-12 col-lg-60">
+                <div class="card">
+                            <div class="card-header">
+                                <div class="row align-items-center mb-0">
+                                    <div class="col">
+                                        <div class="card-title">Veri Tablosu</div>
+                                        <div class="card-text text-muted">Siparişler Listesi</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-icon-square btn-icon-secondary dropdown-toggle dropdown-toggle-icon" id="undeliveredTableMenu" data-bs-toggle="dropdown" aria-expanded="false" title="Menü" aria-label="Menü">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="undeliveredTableMenu">
+                                                <li><a class="dropdown-item" href="#">Tümünü Gör</a></li>
+                                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-excel"></i> Excel'e Aktar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-1">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Pazaryeri</th>
+                                                <th scope="col">Sipariş No</th>
+                                                <th scope="col">Müşteri</th>
+                                                <th scope="col">Sebep</th>
+                                                <th scope="col">Tarih</th>
+                                                <th scope="col" data-role="actions">İşlemler</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Beymen.com</td>
+                                                <td>TS-2026-0001</td>
+                                                <td>Ahmet Yılmaz</td>
+                                                <td>Adres Hatalı</td>
+                                                <td>05.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trendyol</td>
+                                                <td>TS-2026-0002</td>
+                                                <td>Mehmet Demir</td>
+                                                <td>Telefon Ulaşılamadı</td>
+                                                <td>05.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hepsiburada</td>
+                                                <td>TS-2026-0003</td>
+                                                <td>Elif Kaya</td>
+                                                <td>Kapıda İade</td>
+                                                <td>04.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>N11</td>
+                                                <td>TS-2026-0004</td>
+                                                <td>Zeynep Arslan</td>
+                                                <td>Yanlış Ürün</td>
+                                                <td>04.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Amazon</td>
+                                                <td>TS-2026-0005</td>
+                                                <td>Merve Şahin</td>
+                                                <td>Hasarlı Teslim</td>
+                                                <td>03.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mb-0">
+                            <div class="col">
+                                <div class="card-text mb-0">
+                                    <strong>5</strong> Toplam
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row align-items-center mb-0">
+                                    <div class="col">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <select class="form-select pagination-select" aria-label="Sayfa başına kayıt">
+                                            <option value="10" selected>10</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hızlı İşlem Tablosu -->
+            <div class="col-12 col-lg-40">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row mb-0">
+                            <div class="col">
+                                <div class="card-title">Hızlı İşlem Tablosu</div>
+                                <div class="card-text text-muted">Çalışanlar Tablosu</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-icon-square btn-icon-secondary dropdown-toggle dropdown-toggle-icon" id="employeesTableMenu" data-bs-toggle="dropdown" aria-expanded="false" title="Menü" aria-label="Menü">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="employeesTableMenu">
+                                        <li><a class="dropdown-item" href="#">Tümünü Gör</a></li>
+                                        <li><a class="dropdown-item" href="#">Yeni Çalışan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-1">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Ad Soyad</th>
+                                                <th scope="col">Departman</th>
+                                                <th scope="col">Durum</th>
+                                                <th scope="col" data-role="actions">İşlemler</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ayşe Yıldız</td>
+                                                <td>Operasyon</td>
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Can Öztürk</td>
+                                                <td>Depo</td>
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Selin Koç</td>
+                                                <td>İK</td>
+                                                <td>İzinli</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emre Aksoy</td>
+                                                <td>IT</td>
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Deniz Acar</td>
+                                                <td>Finans</td>
+                                                <td>Pasif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mb-0">
+                            <div class="col">
+                                <div class="card-text mb-0 mt-1">
+                                    <strong>5</strong> Toplam
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,1011 @@
+<div class="row mb-3">
+           <div class="col-12 col-lg-4">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="card-title">Butonlar</div>
+                   </div>
+                   <div class="card-body">
+                       <h4 class="mb-2">Normal Butonlar</h4>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-primary mb-1">Primary</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-secondary mb-1">Secondary</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-third mb-1">Third</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button type="button" class="btn btn-action mb-1">Action</button>
+                           </div>
+                       </div>
+
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-success mb-1">Success</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-danger mb-1">Danger</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-warning mb-1">Warning</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button type="button" class="btn btn-link mb-1">Link</button>
+                           </div>
+                       </div>
+
+                       <h4 class="mb-2">Outline Butonlar</h4>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline mb-1"><i class="fa-solid fa-filter"></i> Outline</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline-primary mb-1"><i class="fa-solid fa-eye"></i> Primary</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline-secondary mb-1"><i class="fa-solid fa-gear"></i> Second</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline-third mb-1"><i class="fa-solid fa-bars"></i> Third</button>
+                           </div>
+                       </div>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline-success mb-1"><i class="fa-solid fa-check"></i> Success</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline-danger mb-1"><i class="fa-solid fa-xmark"></i> Danger</button>
+                           </div>
+                           <div class="col-12 col-lg-3 p-1">
+                               <button class="btn btn-outline-warning mb-1"><i class="fa-solid fa-bell"></i> Warning</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-4">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="card-title">Uzun Butonlar</div>
+                   </div>
+                   <div class="card-body">
+                       <h4 class="mb-2">İkonlu Uzun Butonlar</h4>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-primary mb-1"><i class="fa-solid fa-check"></i> Long Primary with Icon</button>
+                           </div>
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-secondary mb-1"><i class="fa-solid fa-arrow-left"></i> Long 2nd. with Icon</button>
+                           </div>
+                       </div>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-third mb-1"><i class="fa-solid fa-circle"></i> Long Third with Icon</button>
+                           </div>
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-success mb-1"><i class="fa-solid fa-plus"></i> Long Success with Icon</button>
+                           </div>
+                       </div>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-danger mb-1"><i class="fa-solid fa-trash"></i> Long Danger with Icon</button>
+                           </div>
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i> Long Warning with Icon</button>
+                           </div>
+                       </div>
+                       <div class="row m--1">
+                           <div class="col-12 col-lg-6 p-1">
+                               <button class="btn btn-long btn-outline mb-1">Long Outline Button</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-4">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="card-title">İkon Butonlar</div>
+                   </div>
+                   <div class="card-body">
+                       <h4 class="mb-2">Kare İkon Butonlar</h4>
+                       <button type="button" class="btn btn-icon-square btn-icon-primary mb-1"><i class="fa-solid fa-pen"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-secondary mb-1"><i class="fa-solid fa-arrow-left"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-third mb-1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-success mb-1"><i class="fa-solid fa-check"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-danger mb-1"><i class="fa-solid fa-trash"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline mb-1"><i class="fa-solid fa-filter"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline-primary mb-1"><i class="fa-solid fa-eye"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline-secondary mb-1"><i class="fa-solid fa-gear"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline-third mb-1"><i class="fa-solid fa-bars"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline-danger mb-1"><i class="fa-solid fa-xmark"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline-success mb-1"><i class="fa-solid fa-file-excel"></i></button>
+                       <button type="button" class="btn btn-icon-square btn-icon-outline-warning mb-1"><i class="fa-solid fa-bell"></i></button>
+
+                       <h4 class="mb-2">Daire İkon Butonlar</h4>
+                       <button type="button" class="btn btn-icon btn-icon-primary mb-1"><i class="fa-solid fa-pen"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-secondary mb-1"><i class="fa-solid fa-arrow-left"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-third mb-1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-success mb-1"><i class="fa-solid fa-check"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-danger mb-1"><i class="fa-solid fa-trash"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline mb-1"><i class="fa-solid fa-filter"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline-primary mb-1"><i class="fa-solid fa-eye"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline-secondary mb-1"><i class="fa-solid fa-gear"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline-third mb-1"><i class="fa-solid fa-bars"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline-danger mb-1"><i class="fa-solid fa-xmark"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline-success mb-1"><i class="fa-solid fa-file-excel"></i></button>
+                       <button type="button" class="btn btn-icon btn-icon-outline-warning mb-1"><i class="fa-solid fa-bell"></i></button>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <h2>Form Elemanları</h2>
+       <!-- Form Elemanları Kartları -->
+       <div class="row mb-3">
+           <div class="col-12 col-lg-4">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="card-title">Form Control</div>
+                   </div>
+                   <div class="card-body">
+                        <div class="row m--1">
+                            <div class="col-12 p-1">
+                                <div>
+                                    <label for="FormControlInput" class="form-label">Email address</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="name@example.com"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m--1">
+                            <div class="col-12 p-1">
+                                <div>
+                                    <label for="FormControlInput" class="form-label">Ürün Sayısı</label>
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        placeholder="0"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-4">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="card-title">Select</div>
+                   </div>
+                   <div class="card-body">
+                        <div class="row m--1">
+                            <div class="col-12 p-1">
+                                <div>
+                                    <label for="FormControlSelect" class="form-label">Select</label>
+                                    <select class="form-select" aria-label="Select">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="4">Four</option>
+                                        <option value="5">Five</option>
+                                        <option value="6">Six</option>
+                                        <option value="7">Seven</option>
+                                        <option value="8">Eight</option>
+                                        <option value="9">Nine</option>
+                                        <option value="10">Ten</option>
+                                        <option value="11">Eleven</option>
+                                        <option value="12">Twelve</option>
+                                        <option value="13">Third</option>
+                                        <option value="14">Four</option>
+                                        <option value="15">Five</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m--1 mt-1">
+                            <div class="col-12 p-1">
+                                <div>
+                                    <label for="FormControlSelect" class="form-label">Multiple Select</label>
+                                    <select class="form-select" aria-label="Select">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="4">Four</option>
+                                        <option value="5">Five</option>
+                                        <option value="6">Six</option>
+                                        <option value="7">Seven</option>
+                                        <option value="8">Eight</option>
+                                        <option value="9">Nine</option>
+                                        <option value="10">Ten</option>
+                                        <option value="11">Eleven</option>
+                                        <option value="12">Twelve</option>
+                                        <option value="13">Third</option>
+                                        <option value="14">Four</option>
+                                        <option value="15">Five</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-4">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="card-title">CheckBox & Radio</div>
+                   </div>
+                   <div class="card-body">
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="flexCheckDefault"
+                                value=""
+                            />
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <br>
+                        <div class="row mt-1">
+                            <div class="col-auto">
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        id="flexRadioDefault1"
+                                        name="flexRadioDefault"
+                                        />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
+                                </div> 
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        id="flexRadioDefault2"
+                                        name="flexRadioDefault"
+                                    />
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <h2>Hızlı Bilgi Kartları</h2>
+       <!-- Hızlı Bilgi Kartları -->
+       <div class="row mb-3">
+           <div class="col-12 col-lg-20">
+               <div class="card">
+                   <div class="card-header">
+                       <i class="fa-solid fa-circle-check icon-success icon-large mb-2"></i>
+                   </div>
+                   <div class="card-body pt-0 pb-0">
+                       <div class="card-text">Aktif</div>
+                       <div class="card-big-text">1.102</div>
+
+                       <div class="row">
+                            <div class="col-auto bg-passive-success d-flex align-items-center gap-1">
+                                <div class="card-text text-success">
+                                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                                    %10
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-20">
+               <div class="card">
+                   <div class="card-header">
+                       <i class="fa-solid fa-boxes-stacked icon-primary icon-large mb-2"></i>
+                   </div>
+                   <div class="card-body pt-0 pb-0">
+                       <div class="card-text">Toplam</div>
+                       <div class="card-big-text">2.418</div>
+                       <div class="row">
+                            <div class="col-auto bg-passive-success d-flex align-items-center gap-1">
+                                <div class="card-text text-success">
+                                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                                    %10
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-20">
+               <div class="card">
+                   <div class="card-header">
+                       <i class="fa-solid fa-clock icon-warning icon-large mb-2"></i>
+                   </div>
+                   <div class="card-body pt-0 pb-0">
+                       <div class="card-text">Bekleyen</div>
+                       <div class="card-big-text">186</div>
+                       <div class="row">
+                            <div class="col-auto bg-passive-danger d-flex align-items-center gap-1">
+                                <div class="card-text text-danger">
+                                    <i class="fa-solid fa-arrow-down rotate--45"></i>
+                                    %10
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-12 col-lg-20">
+               <div class="card">
+                   <div class="card-header">
+                       <i class="fa-solid fa-truck icon-primary icon-large mb-2"></i>
+                   </div>
+                   <div class="card-body pt-0 pb-0">
+                       <div class="card-text">Kargoda</div>
+                       <div class="card-big-text">74</div>
+                       <div class="row">
+                            <div class="col-auto bg-passive-warning d-flex align-items-center gap-1">
+                                <div class="card-text text-warning">
+                                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                                    %10
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-12 col-lg-20">
+               <div class="card">
+                   <div class="card-header">
+                       <i class="fa-solid fa-circle-xmark icon-danger icon-large mb-2"></i>
+                   </div>
+                   <div class="card-body pt-0 pb-0">
+                       <div class="card-text">İptal</div>
+                       <div class="card-big-text">25</div>
+                       <div class="row">
+                            <div class="col-auto bg-passive-danger d-flex align-items-center gap-1">
+                                <div class="card-text text-danger">
+                                    <i class="fa-solid fa-arrow-down rotate--45"></i>
+                                    %10
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <h2>Filtreleme</h2>
+
+       <!-- Filtreleme -->
+       <div class="card">
+           <div class="card-body">
+
+               <div class="row mb-0 m--1">
+                   <div class="col-12 col-lg-10 p-1">
+                       <div class="input-group mb-0">
+                           <select class="form-select ig-radius-left" aria-label="Arama Kriteri">
+                               <option value="marketplaceOrderNo" selected>Pazaryeri Sipariş No</option>
+                               <option value="orderNo">Sipariş No</option>
+                               <option value="integratorOrderNo">Entegratör Sipariş No</option>
+                               <option value="recipient">Alıcı</option>
+                           </select>
+                           <input
+                               type="text"
+                               class="form-control"
+                               placeholder="Pazaryeri Sipariş No, Sipariş No ve Entegratör Sipariş No bilgilerine göre arama yapabilirsiniz."
+                               aria-label="Input with dropdown and button"
+                           />
+                           <button type="button" class="btn btn-icon-square btn-icon-primary mb-0 ig-radius-right" aria-label="Ara" title="Ara"><i class="fa-solid fa-search"></i></button>
+                       </div>
+                   </div>
+                   <div class="col-12 col-lg-2 p-1">
+                       <button id="filter-expanded-button" class="btn btn-outline-primary" type="button">
+                           Gelişmiş Filtreler <i class="fa-solid fa-chevron-down"></i>
+                       </button>
+                   </div>
+               </div>
+
+               <div class="filter-expanded">
+                   <div class="row m--1 mt-1 items-end">
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Durum</label>
+                               <select class="form-select" aria-label="Durum">
+                                   <option value="" selected>Seçiniz</option>
+                                   <option value="packed">Paketlendi</option>
+                                   <option value="shipped">Kargoya Teslim Edildi</option>
+                                   <option value="partialCancel">Kısmi İptal</option>
+                                   <option value="canceled">İptal Edildi</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Pazaryeri</label>
+                               <select class="form-select" aria-label="Pazaryeri">
+                                   <option value="" selected>Seçiniz</option>
+                                   <option value="beymen">Beymen</option>
+                                   <option value="trendyol">Trendyol</option>
+                                   <option value="hepsiburada">Hepsiburada</option>
+                                   <option value="n11">n11</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Sipariş Tipi</label>
+                               <select class="form-select" aria-label="Sipariş Tipi">
+                                   <option value="" selected>Seçiniz</option>
+                                   <option value="manual">Manuel Satış</option>
+                                   <option value="channel">Kanal Sipariş</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Alıcı</label>
+                               <input type="text" class="form-control" placeholder="Alıcı adı" />
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Sipariş Tarihi</label>
+                               <input type="date" class="form-control" aria-label="Sipariş Tarihi" />
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="row m--1 mt-1 items-end">
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Ürün Çeşidi Sayısı</label>
+                               <input type="number" class="form-control" placeholder="0" />
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label">Ürün Miktarı</label>
+                               <input type="number" class="form-control" placeholder="0" />
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label"></label>
+                               <select class="form-select" aria-label="Şablon">
+                                   <option value="" selected>Şablon</option>
+                                   <option value="1">Pazaryeri, Sipariş Tipi </option>
+                                   <option value="2">Ürün Çeşidi Sayısı, Durum</option>
+                                   <option value="3">Boş Şablon</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label"></label>
+                               <button class="btn btn-outline" type="button">
+                                   <i class="fa-solid fa-copy"></i>
+                                   Kaydet
+                               </button>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-20 p-1">
+                           <div class="filter-field">
+                               <label class="form-label"></label>
+                               <button class="btn btn-primary" type="button">
+                                   <i class="fa-solid fa-filter"></i>
+                                   Filtrele
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+
+       <h2>Tablolar</h2>
+        <!-- Ana Tablo -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center mb-0">
+                    <div class="col">
+                        <div class="card-text">
+                            Filtreler: <strong>Pazaryeri</strong> seçildi
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-icon-square btn-icon-success" title="Excel Aktar" aria-label="Excel Aktar">
+                            <i class="fa-solid fa-file-excel"></i>
+                        </button>
+                        <div class="dropdown">
+                            <button id="table-settings-btn" class="btn btn-icon-square btn-icon-primary dropdown-toggle dropdown-toggle-icon table-settings-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Sütunları Göster/Gizle" aria-label="Sütunları Göster/Gizle">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-columns"></ul>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+           <div class="card-body">
+               <div class="row mb-1">
+                   <div class="col-12">
+                       <div class="table-responsive">
+                           <table id="mainTable" class="table table-striped mb-1">
+                               <thead>
+                                   <tr>
+                                       <th scope="col" data-role="select"><input type="checkbox" /></th>
+                                       <th scope="col">Pazaryeri</th>
+                                       <th scope="col">Pazaryeri Sipariş No</th>
+                                       <th scope="col">Entegratör Sipariş No</th>
+                                       <th scope="col">Durum</th>
+                                       <th scope="col">Sipariş Tarihi</th>
+                                       <th scope="col">Ürün Çeşidi Sayısı</th>
+                                       <th scope="col">Ürün Miktarı</th>
+                                       <th scope="col">Sipariş Tipi</th>
+                                       <th scope="col">Alıcı</th>
+                                       <th scope="col">Sipariş No</th>
+                                       <th scope="col" data-role="actions">Eylemler</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td><input type="checkbox" /></td>
+                                       <td>Beymen</td>
+                                       <td>BEY20251129-12257125</td>
+                                       <td>W25120109194011</td>
+                                       <td>Kargoya Teslim Edildi</td>
+                                       <td>11.12.2025 09:19</td>
+                                       <td>1</td>
+                                       <td>1</td>
+                                       <td>Manuel Satış Kanalı Siparişi</td>
+                                       <td>ozgur kizilbayrak</td>
+                                       <td>W25120109194011</td>
+                                       <td>
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                           <div class="dropdown dropdown-portal">
+                                               <button type="button" class="btn btn-icon-square btn-icon-outline-primary dropdown-toggle dropdown-toggle-icon" title="Menü" aria-label="Menü" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                               </button>
+                                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit"></i> Düzenle</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy"></i> Kopyala</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-print"></i> Yazdır</a></li>
+                                                   <li><hr class="dropdown-divider"></li>
+                                                   <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-trash"></i> Sil</a></li>
+                                               </ul>
+                                           </div>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox" /></td>
+                                       <td>Beymen</td>
+                                       <td>TRY20251202-889112</td>
+                                       <td>W25120210451233</td>
+                                       <td>Hazırlanıyor</td>
+                                       <td>12.12.2025 10:45</td>
+                                       <td>2</td>
+                                       <td>3</td>
+                                       <td>Pazaryeri Satış</td>
+                                       <td>Ayse demir</td>
+                                       <td>W25120210451233</td>
+                                       <td>
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                           <div class="dropdown dropdown-portal">
+                                               <button type="button" class="btn btn-icon-square btn-icon-outline-primary dropdown-toggle dropdown-toggle-icon" title="Menü" aria-label="Menü" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                               </button>
+                                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit"></i> Düzenle</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy"></i> Kopyala</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-print"></i> Yazdır</a></li>
+                                                   <li><hr class="dropdown-divider"></li>
+                                                   <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-trash"></i> Sil</a></li>
+                                               </ul>
+                                           </div>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox" /></td>
+                                       <td>Beymen</td>
+                                       <td>HPS20251203-557701</td>
+                                       <td>W25120308510288</td>
+                                       <td>Kargoda</td>
+                                       <td>13.12.2025 08:51</td>
+                                       <td>1</td>
+                                       <td>1</td>
+                                       <td>Standart Satış</td>
+                                       <td>Mehmet can</td>
+                                       <td>W25120308510288</td>
+                                       <td>
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                           <div class="dropdown dropdown-portal">
+                                               <button type="button" class="btn btn-icon-square btn-icon-outline-primary dropdown-toggle dropdown-toggle-icon" title="Menü" aria-label="Menü" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                               </button>
+                                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit"></i> Düzenle</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy"></i> Kopyala</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-print"></i> Yazdır</a></li>
+                                                   <li><hr class="dropdown-divider"></li>
+                                                   <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-trash"></i> Sil</a></li>
+                                               </ul>
+                                           </div>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox" /></td>
+                                       <td>Beymen</td>
+                                       <td>N1120251204-220091</td>
+                                       <td>W25120411192700</td>
+                                       <td>İptal</td>
+                                       <td>14.12.2025 11:19</td>
+                                       <td>4</td>
+                                       <td>4</td>
+                                       <td>Manuel Satış</td>
+                                       <td>Zeynep arslan</td>
+                                       <td>W25120411192700</td>
+                                       <td>
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                           <div class="dropdown dropdown-portal">
+                                               <button type="button" class="btn btn-icon-square btn-icon-outline-primary dropdown-toggle dropdown-toggle-icon" title="Menü" aria-label="Menü" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                               </button>
+                                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit"></i> Düzenle</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy"></i> Kopyala</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-print"></i> Yazdır</a></li>
+                                                   <li><hr class="dropdown-divider"></li>
+                                                   <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-trash"></i> Sil</a></li>
+                                               </ul>
+                                           </div>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox" /></td>
+                                       <td>Beymen</td>
+                                       <td>AMZ20251205-440812</td>
+                                       <td>W25120509401201</td>
+                                       <td>İade</td>
+                                       <td>15.12.2025 09:40</td>
+                                       <td>1</td>
+                                       <td>2</td>
+                                       <td>Pazaryeri Satış</td>
+                                       <td>Deniz kaya</td>
+                                       <td>W25120509401201</td>
+                                       <td>
+                                           <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                               <i class="fa-solid fa-eye"></i>
+                                           </button>
+                                           <div class="dropdown dropdown-portal">
+                                               <button type="button" class="btn btn-icon-square btn-icon-outline-primary dropdown-toggle dropdown-toggle-icon" title="Menü" aria-label="Menü" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                               </button>
+                                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit"></i> Düzenle</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy"></i> Kopyala</a></li>
+                                                   <li><a class="dropdown-item" href="#"><i class="fa-solid fa-print"></i> Yazdır</a></li>
+                                                   <li><hr class="dropdown-divider"></li>
+                                                   <li><a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-trash"></i> Sil</a></li>
+                                               </ul>
+                                           </div>
+                                       </td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+               </div>
+                <div class="row align-items-center mb-0">
+                    <div class="col">
+                        <div class="card-text mb-0">
+                            <strong>5</strong> Toplam
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row align-items-center mb-0">
+                            <div class="col">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select pagination-select" aria-label="Sayfa başına kayıt">
+                                    <option value="10" selected>10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Veri Tablosu -->
+        <div class="row mb-3">
+            <div class="col-12 col-lg-60">
+                <div class="card">
+                            <div class="card-header">
+                                <div class="row align-items-center mb-0">
+                                    <div class="col">
+                                        <div class="card-title">Veri Tablosu</div>
+                                        <div class="card-text text-muted">Siparişler Listesi</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-icon-square btn-icon-secondary dropdown-toggle dropdown-toggle-icon" id="undeliveredTableMenu" data-bs-toggle="dropdown" aria-expanded="false" title="Menü" aria-label="Menü">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="undeliveredTableMenu">
+                                                <li><a class="dropdown-item" href="#">Tümünü Gör</a></li>
+                                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-excel"></i> Excel'e Aktar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                    <div class="card-body">
+                        <div class="row mb-1">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-1">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Pazaryeri</th>
+                                                <th scope="col">Sipariş No</th>
+                                                <th scope="col">Müşteri</th>
+                                                <th scope="col">Sebep</th>
+                                                <th scope="col">Tarih</th>
+                                                <th scope="col" data-role="actions">Eylemler</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Beymen.com</td>
+                                                <td>TS-2026-0001</td>
+                                                <td>Ahmet Yılmaz</td>
+                                                <td>Adres Hatalı</td>
+                                                <td>05.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trendyol</td>
+                                                <td>TS-2026-0002</td>
+                                                <td>Mehmet Demir</td>
+                                                <td>Telefon Ulaşılamadı</td>
+                                                <td>05.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hepsiburada</td>
+                                                <td>TS-2026-0003</td>
+                                                <td>Elif Kaya</td>
+                                                <td>Kapıda İade</td>
+                                                <td>04.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>N11</td>
+                                                <td>TS-2026-0004</td>
+                                                <td>Zeynep Arslan</td>
+                                                <td>Yanlış Ürün</td>
+                                                <td>04.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Amazon</td>
+                                                <td>TS-2026-0005</td>
+                                                <td>Merve Şahin</td>
+                                                <td>Hasarlı Teslim</td>
+                                                <td>03.01.2026</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mb-0">
+                            <div class="col">
+                                <div class="card-text mb-0">
+                                    <strong>5</strong> Toplam
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row align-items-center mb-0">
+                                    <div class="col">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <select class="form-select pagination-select" aria-label="Sayfa başına kayıt">
+                                            <option value="10" selected>10</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hızlı İşlem Tablosu -->
+            <div class="col-12 col-lg-40">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row mb-0">
+                            <div class="col">
+                                <div class="card-title">Hızlı İşlem Tablosu</div>
+                                <div class="card-text text-muted">Çalışanlar Tablosu</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-icon-square btn-icon-secondary dropdown-toggle dropdown-toggle-icon" id="employeesTableMenu" data-bs-toggle="dropdown" aria-expanded="false" title="Menü" aria-label="Menü">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="employeesTableMenu">
+                                        <li><a class="dropdown-item" href="#">Tümünü Gör</a></li>
+                                        <li><a class="dropdown-item" href="#">Yeni Çalışan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-1">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-1">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Ad Soyad</th>
+                                                <th scope="col">Departman</th>
+                                                <th scope="col">Durum</th>
+                                                <th scope="col" data-role="actions">Eylemler</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ayşe Yıldız</td>
+                                                <td>Operasyon</td>
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Can Öztürk</td>
+                                                <td>Depo</td>
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Selin Koç</td>
+                                                <td>İK</td>
+                                                <td>İzinli</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emre Aksoy</td>
+                                                <td>IT</td>
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Deniz Acar</td>
+                                                <td>Finans</td>
+                                                <td>Pasif</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon-square btn-icon-outline-primary" title="Detay" aria-label="Detay">
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mb-0">
+                            <div class="col">
+                                <div class="card-text mb-0 mt-1">
+                                    <strong>5</strong> Toplam
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

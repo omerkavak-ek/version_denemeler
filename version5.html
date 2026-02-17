@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siparişler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="version5.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="mini-logo-container">
+                <img src="logo/ekol_e.png" alt="Ekol Mini Logo" class="mini-logo">
+            </div>
+            <div class="sidebar-logo-container">
+                <img src="logo/ekol.png" alt="Ekol Logo" class="sidebar-logo">
+            </div>
+            <button class="hamburger-btn" id="sidebarToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Ana Sayfa</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profil</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-box"></i>
+                <span>Ürünler</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Adresler</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-truck"></i>
+                <span>Depoya Sevk İş Emirleri</span>
+            </a>
+
+            <div class="nav-item-parent expanded" id="menu-orders">
+                <div class="nav-item-content">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Sipariş Yönetimi</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="nav-submenu show" data-parent="menu-orders">
+                <a href="#" class="nav-submenu-item active">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Siparişler</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Sorunlu Siparişler</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Sevk Tarihi Planlama</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Sipariş Raporları</span>
+                </a>
+            </div>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>Stok Yönetimi</span>
+            </a>
+
+            <div class="nav-item-parent" id="menu-balance">
+                <div class="nav-item-content">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Bakiye</span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="nav-submenu" data-parent="menu-balance">
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Ayarlar</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Kargoya Teslim Süresi</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <span>İade Yönetimi</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Kargo Anlaşmaları</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-wrench"></i>
+                    <span>Tadilattan Gelen İade</span>
+                </a>
+                <a href="#" class="nav-submenu-item">
+                    <i class="fa-solid fa-shield"></i>
+                    <span>Ek Sigorta Teminatı</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-right">
+                <div class="theme-toggle">
+                    <button class="hamburger-btn" aria-label="Light Mode" title="Light Mode">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <button class="hamburger-btn" aria-label="Dark Mode" title="Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="language-selector">
+                    <span>Türkçe</span>
+                </div>
+                <div class="user-info">
+                    <i class="fa-solid fa-circle-user" style="font-size: 24px; color: #9A9B9D;"></i>
+                    <span class="user-email">mustafa.ozkaya@ekol.com</span>
+                </div>
+                <button class="fullscreen-btn" aria-label="Tam Ekran" title="Tam Ekran">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header (Navbar altı) -->
+    <header class="page-header">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h1>Siparişler</h1>
+    </header>
+    <!-- Main Content placeholder -->
+    <main class="main-content">
+        <!-- Hızlı Bilgi Kartları -->
+        <!-- (Currently omitting as not explicitly detailed in prompt but keeping placeholder structure if needed later) -->
+
+        <!-- Filtreleme -->
+        <h2 class="h2 mb-2">Arama ve Filtreleme</h2>
+        <div class="card" id="filterCard">
+            <div class="card-body">
+
+                <!-- Arama -->
+                <div class="row mb-0 m--1">
+                    <div class="col p-1">
+                        <div class="input-group mb-0">
+                            <select class="form-select ig-radius-left" aria-label="Arama Kriteri"
+                                style="max-width: 180px;">
+                                <option value="referansNo" selected>Referans Numarası</option>
+                                <option value="antBeyNo">Ant. Bey. No.</option>
+                                <option value="plaka">Plaka</option>
+                                <option value="ozetBeyanNo">Özet Beyan No</option>
+                            </select>
+                            <input type="text" class="form-control"
+                                placeholder="Referans Numarası, Ant. Bey. No., Plaka veya Özet Beyan No bilgilerine göre arama yapabilirsiniz."
+                                aria-label="Input with dropdown and button" />
+                            <button type="button"
+                                class="btn btn-icon-square btn-icon-outline-secondary mb-0 ig-radius-right"
+                                aria-label="Ara" title="Ara"><i class="fa-solid fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-auto p-1">
+                        <button id="filter-expanded-button" class="btn btn-outline" type="button"
+                            style="border: none; padding: 0 12px; font-size: 14px; height: 42px;">
+                            Gelişmiş Filtreler <i class="fa-solid fa-chevron-down" style="margin-left: 8px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gelişmiş Filtreler -->
+                <div class="filter-expanded">
+                    <!-- Seçim Filtreleri -->
+                    <div class="row m--1 mt-1 items-end">
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="filter-field">
+                                <label class="form-label">Çatı Organizasyon</label>
+                                <select class="form-select" aria-label="Çatı Organizasyon">
+                                    <option value="" selected>Seçiniz</option>
+                                    <option value="ekol">Ekol Lojistik A.Ş.</option>
+                                    <option value="other1">Diğer Organizasyon 1</option>
+                                    <option value="other2">Diğer Organizasyon 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="filter-field">
+                                <label class="form-label">Firma</label>
+                                <select class="form-select" aria-label="Firma">
+                                    <option value="" selected>Seçiniz</option>
+                                    <option value="acme">ACME A.Ş.</option>
+                                    <option value="xyz">XYZ Dış Tic.</option>
+                                    <option value="techcorp">TechCorp Ltd.</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="filter-field">
+                                <label class="form-label">Gönderici</label>
+                                <select class="form-select" aria-label="Gönderici">
+                                    <option value="" selected>Seçiniz</option>
+                                    <option value="globex">Globex Ltd.</option>
+                                    <option value="initech">Initech GmbH</option>
+                                    <option value="umbrella">Umbrella Corp.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarih Filtreleri -->
+                    <div class="row m--1 mt-1 items-end">
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="filter-field">
+                                <label class="form-label">Özet Beyan Tarihi</label>
+                                <input type="date" class="form-control" aria-label="Özet Beyan Tarihi" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="filter-field">
+                                <label class="form-label">Ant. Bey. Tarihi</label>
+                                <input type="date" class="form-control" aria-label="Ant. Bey. Tarihi" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 p-1">
+                            <div class="row m--1">
+                                <div class="col-12 col-lg-4 p-1">
+                                    <div class="filter-field">
+                                        <label class="form-label"></label>
+                                        <select class="form-select" aria-label="Şablon">
+                                            <option value="" selected>Şablon</option>
+                                            <option value="1">Çatı Organizasyon, Firma</option>
+                                            <option value="2">Tarih Filtreleri</option>
+                                            <option value="3">Boş Şablon</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 p-1">
+                                    <div class="filter-field">
+                                        <label class="form-label"></label>
+                                        <button class="btn btn-outline w-100" type="button">
+                                            <i class="fa-solid fa-copy"></i>
+                                            Kaydet
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 p-1">
+                                    <div class="filter-field">
+                                        <label class="form-label"></label>
+                                        <button class="btn btn-primary w-100" type="button">
+                                            <i class="fa-solid fa-filter"></i>
+                                            Filtrele
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ana Tablo -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center mb-0 m--1">
+                    <div class="col p-1">
+                        <div class="card-text mb-0">
+                            Filtreler: <strong>Çatı Organizasyon</strong> seçildi.
+                        </div>
+                    </div>
+                    <div class="col-auto p-1">
+                        <div class="dropdown">
+                            <button id="table-settings-btn"
+                                class="btn btn-icon-square btn-icon-outline dropdown-toggle dropdown-toggle-icon table-settings-btn"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                title="Sütunları Göster/Gizle" aria-label="Sütunları Göster/Gizle">
+                                <i class="fa-solid fa-sliders-h"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-columns"></ul>
+                        </div>
+                    </div>
+                    <div class="col-auto p-1">
+                        <button type="button" class="btn btn-icon-square btn-icon-outline" title="Excel Aktar"
+                            aria-label="Excel Aktar">
+                            <i class="fa-solid fa-file-excel"></i>
+                        </button>
+                    </div>
+                    <div class="col-auto p-1">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle dropdown-toggle-text" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                İşlem Yap <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Stoktan Düşüm</a></li>
+                                <li><a class="dropdown-item" href="#">Stoktan Satış</a></li>
+                                <li><a class="dropdown-item" href="#">Ardıye Hesapla</a></li>
+                                <li><a class="dropdown-item" href="#">Tasfiyeye Bırak</a></li>
+                                <li><a class="dropdown-item" href="#">Gümrük Denetim Raporu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-1">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table id="mainTable" class="table table-striped mb-1">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="checkbox-col" data-column-index="0" data-role="select">
+                                            <input type="checkbox" id="selectAll" aria-label="Tümünü Seç">
+                                        </th>
+                                        <th data-column-index="1">Referans</th>
+                                        <th data-column-index="23">Antrepo Beyannamesi</th>
+                                        <th data-column-index="25">Ant. Bey. Tarihi</th>
+                                        <th data-column-index="2">Çatı Organizasyon</th>
+                                        <th data-column-index="3">Firma</th>
+                                        <th data-column-index="4">Gönderici</th>
+                                        <th data-column-index="5">Palet Sayısı</th>
+                                        <th data-column-index="6">Giren Kap</th>
+                                        <th data-column-index="7">Çıkan Kap</th>
+                                        <th data-column-index="8">Stok Kap</th>
+                                        <th data-column-index="9">Giren Kg</th>
+                                        <th data-column-index="10">Çıkan Kg</th>
+                                        <th data-column-index="11">Stok Kg</th>
+                                        <th data-column-index="12">Giren Pw</th>
+                                        <th data-column-index="13">Çıkan Pw</th>
+                                        <th data-column-index="14">Stok Pw</th>
+                                        <th data-column-index="15">Giren Hacim</th>
+                                        <th data-column-index="16">Çıkan Hacim</th>
+                                        <th data-column-index="17">Stok Hacim</th>
+                                        <th data-column-index="18">Plaka</th>
+                                        <th data-column-index="19">Özet Beyan No</th>
+                                        <th data-column-index="20">Özet Beyan Tarihi</th>
+                                        <th scope="col" class="actions-col" data-column-index="35" data-role="actions">
+                                            Eylemler</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="checkbox-col" data-column-index="0">
+                                            <input type="checkbox" aria-label="Satır Seç">
+                                        </td>
+                                        <td data-column-index="1">REF-0001</td>
+                                        <td data-column-index="23">ANT123456</td>
+                                        <td data-column-index="25">01.12.2025</td>
+                                        <td data-column-index="2">Ekol Lojistik A.Ş.</td>
+                                        <td data-column-index="3">ACME A.Ş.</td>
+                                        <td data-column-index="4">Globex Ltd.</td>
+                                        <td data-column-index="5">24</td>
+                                        <td data-column-index="6">150</td>
+                                        <td data-column-index="7">50</td>
+                                        <td data-column-index="8">100</td>
+                                        <td data-column-index="9">3500</td>
+                                        <td data-column-index="10">1200</td>
+                                        <td data-column-index="11">2300</td>
+                                        <td data-column-index="12">3400</td>
+                                        <td data-column-index="13">1150</td>
+                                        <td data-column-index="14">2250</td>
+                                        <td data-column-index="15">45,5</td>
+                                        <td data-column-index="16">15,2</td>
+                                        <td data-column-index="17">30,3</td>
+                                        <td data-column-index="18">34 ABC 100</td>
+                                        <td data-column-index="19">OZB-2025-001</td>
+                                        <td data-column-index="20">01.12.2025</td>
+                                        <td class="actions-col" data-column-index="35">
+                                            <button type="button" class="btn btn-icon-square btn-icon-outline-primary"
+                                                title="Detay" aria-label="Detay">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <!-- More rows would go here, omitting for brevity in this initial injection -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-0">
+                    <div class="col">
+                        <div class="card-text mb-0">
+                            <strong>1420</strong> Toplam
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row align-items-center mb-0">
+                            <div class="col">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select pagination-select" aria-label="Sayfa başına kayıt"
+                                    style="width: 70px;">
+                                    <option value="10" selected>10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="version5.js"></script>
+</body>
+
+</html>

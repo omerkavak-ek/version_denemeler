@@ -1,0 +1,69 @@
+html, css ve js dosyaları üzerinde çalışırken, bu dosyalarda değişiklikler yaparken aşağıdaki kurallara uy.
+Hiçbir zaman yeni bir css sınıfı oluşturamamalısın.
+
+Her zaman @row-column.txt dosyasındaki kuaralları kontrol et.
+bir input lanaı eklenecekse @Input.txt dosyasındaki gibi sınıf yapıularına sahip olmaldır
+
+Eğer yeni sayfa oluşturacaksın aşağıdaki talimatlara uy.
+
+
+Sayfayı asla dark temada yapmamalısın. Sayfa light mod olarak tasarlanmalıdır. 
+Dark temayı engelleyen js kodları ekleme. Sadece kullanıcı sana dark tema görseller atsa bile bizim renklerimiz dışında renkler kullnama.
+Sayfa sadece kendi css ve js kodlarını bağlanmalıdır.
+İkonlar font awsome kullanmalısın. Sayfada poppins dışında font kullanılmamalısın. CDN ile poppins bağlamalısın.
+Sayfada tüm renkler bizim renklerimiz olmalıdır.
+Sayfada tüm butonlar bizim buton formatlarımız olmalıdır.
+Sayfanın js kodlarında çoğu kodlar bulunuyor. Bu kodları kullanmalısın. Ekstrem durumlarda js kodlarında değişiklik yapabilirsin.
+
+Bir sayfa üzerinde değişiklikler yapman istendiğinide her zaman @row-column.txt dosyasına göre yapacaksın. Bu dosyada belirtilen kart, satır ve sütun yapısına göre ilerleyeceksin.
+Sınıflandırmalar @class.txt dosyasında bulunur. Buradaki sınıflandırmaları ve yapıyı kullanmalısın.
+
+Yeni bir sayfa oluşturulma isteğinde 3 adet yeni dosya oluşturacaksın: html, css ve js dosyası. Bu 3 dosya @version5.html, @version5.css ve @version5.js dosyalarıyla birebir aynı ama yeni dosyalar olmalıdır.
+Bu 3 dosyanın ismini kullanıcı belirtmediyse yapmayı istediği sayfayı çağdıştıracak bir isim var. Çağdıştırılamayacaksa new-page olarak oluştur.
+Hiçbir değişiklik yapmadan bu 3 dosyayı birebir aynı oluşturduktan sonra sol menü değişikliklerini yap.
+
+1- Dosyaların Oluşturulması ve Logoların sol menüde eşleştirilmesi
+Yeni dosyalar her zaman @Product-Results klasöründe olmalıdır. Sol menüde bulunan logolar @Product-Assets klasöründedir.
+Sol menü genişken logo @ekol.png, navbar darken logo @ekol_e.png olmalıdır.
+
+Navbar'da hiçbir değişiklik yapmayacağız, kullanıcnın attığı görselde farklı olsa bile. Sol menü ise kullanıcının attığı görseldeki gibi yapılandırılmalıdır.
+Sol menüyü submenüler varsa, submenülerin görünürlüğünü kontrol etmelisin. Submenüler ve menülerin kullanıcının attığı görseldeki gibi görünmesi gerekir.
+Sol Menüde her zaman Ana Sayfa ve Profil menüsü olmalıdır. Diğer Menüler kullanıcın isteğine göre olmalıdır. 
+Eğer kullanıcı Ana Sayfa yapmak istiyorsa Ana Sayfa menüsü olmalıdır.
+
+sol menüde nav-item-parent sınıfındaki menülere id vermelisin. 
+
+Navbar ve sol menüyü yaptıktan sonra sayfanın ana tasarımına geçmeden önce yapmayı durdur. Kullanıcıdan bir onay iste. 
+Kullanıcı navbar ve sol menüyü onayladıktan sonra sayfanın ana tasarımına geç.
+
+Kullanıcı navbar ve sol menü ile ilgili onay verdiğinde sayfanın ana tasarımına geçmelisin.
+
+
+2. Kartların, Satırların ve Sütunların Belirlenmesi
+Kullanıcının istediği öğelerin görünüşü hiç önemli değildir. Bizim görünüş formatlarımız önemlidir.
+Kodlarda her zaman yorum satırlarıyla belirgin okunabilir kılmalısın.
+Eklediğin öğelerin(tablolar, filtreleme, hızlı bilgi kartları vesaire) en üstüne yorum satırıyla ne eklediğini yazmalısın.
+
+Navbar ve sol menü onayı alındıktan sonra sayfayı kartlara ayırmalısın. 
+Bunu yaparken yan yana olması gereken kartlar veya diğer öğeler varsa bunları satırlara ve sütunlara ayırmalısın.
+Kartların içeriklerini şimdilik oluşturmayacağız. Sadece kartlara başlıklarını vermelisin. Filtreleme kartına başlık vermemelisin. Üstüne card dışına h2 etiketli "Arama ve Filtreleme" başlığını ver.
+Kartlar ve satır sütunların oluşturulması @row-column.txt dosyasında bulunur.
+Kartları yaptıktan sonra kullanıcıdan onay al.
+
+3. Kart İçeriklerinin Eklenmesi
+Kartların içeriklerini @row-column.txt dosyasında bulunan kartların içeriklerini oluşturmalısın.
+@button.txt dosyasında bulunan butonları kartlara eklemelisin.
+@input.txt dosyasında bulunan input alanlarını kartlara eklemelisin.
+Filtreleme alanı oluşturulacaksa veya hangi tablo yapılacaksa bunlara karar vermelisin.
+Filtrelemeyi ve Tablo yapısını henüz ekleme.
+Kullanıdan onay al.
+
+4. Filtreleme varsa Filtreleme Alanının Yapılması
+Filtreleme alanı yapmalısın. Filtreleme alanı hakkındaki bilgi @filter.txt dosyasından bulunur.
+Kullanıcıdan onay al.
+
+4. Tablo varsa Tablo Yapısının Eklenmesi
+Kullanıcı tablo eklemden önce hangi türde tablo ekleyeceğine karar vermelisin.
+Tablo türleri ve yapıları hakkındaki bilgi @table.txt dosyasından bulunur.
+Kullanıcıdan onay al.
+

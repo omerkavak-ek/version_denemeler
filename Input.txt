@@ -1,0 +1,80 @@
+Input alanlarında(radio ve checkbox hariç) kullanıcı aksini söylemediği müddetçe her alanın bir başlığı ve altında alan olmalıdır.
+			
+
+
+
+input
+<div>
+    <label for="FormControlInput" class="form-label">Email address</label>
+    <input
+        type="email"
+        class="form-control"
+        placeholder="name@example.com"
+    />
+</div>
+
+
+SELECT
+<div>
+    <label for="FormControlSelect" class="form-label">Multiple Select</label>
+    <select class="form-select" aria-label="Select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+        <option value="6">Six</option>
+        <option value="7">Seven</option>
+        <option value="8">Eight</option>
+        <option value="9">Nine</option>
+        <option value="10">Ten</option>
+        <option value="11">Eleven</option>
+        <option value="12">Twelve</option>
+        <option value="13">Third</option>
+        <option value="14">Four</option>
+        <option value="15">Five</option>
+    </select>
+</div>
+
+Checkbox
+<div class="form-check">
+    <input
+        class="form-check-input"
+        type="checkbox"
+        id="flexCheckDefault"
+        value=""
+    />
+    <label class="form-check-label" for="flexCheckDefault">
+        Default checkbox
+    </label>
+</div>
+
+Radio
+<div class="form-check">
+    <input
+        class="form-check-input"
+        type="radio"
+        id="flexRadioDefault1"
+        name="flexRadioDefault"
+        />
+    <label class="form-check-label" for="flexRadioDefault1">
+        Default radio
+    </label>
+</div>      
+
+Input group
+En üstte bulunan component'a ig-radius-left, en altta bulunan component'a ise ig-radius-right sınıfları verilmelidir.
+
+<div class="input-group">
+  <button class="btn btn-outline-secondary ig-radius-left" type="button" id="button-addon1">
+    Button
+  </button>
+  <input
+    type="text"
+    class="form-control ig-radius-right"
+    placeholder=""
+    aria-label="Example text with button addon"
+    aria-describedby="button-addon1"
+  />
+</div>

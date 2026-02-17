@@ -1,0 +1,3480 @@
+/* ===================================
+   CSS VARIABLES - Kılavuz Renk Paleti
+   =================================== */
+:root {
+    /* Kurumsal Marka Renkleri (Brand Identity) */
+    --brand-primary: #00ADEF;
+    --brand-dark-gray: #231F20;
+    --brand-gray: #4C4C4E;
+    --brand-light-gray: #9A9B9D;
+    --brand-white-gray: #E0E0E0;
+    --brand-white: #FFFFFF;
+
+    --font-family: 'Poppins', sans-serif;
+
+    /* Durum Renkleri (Semantic Colors) */
+    --color-success: #28C76F;
+    --color-danger: #EA5455;
+    --color-warning: #FF9F43;
+    --color-info: #00ADEF;
+
+    --color-success-passive: rgba(40, 199, 111, 0.12);
+    --color-warning-passive: rgba(255, 159, 67, 0.12);
+    --color-danger-passive: rgba(234, 84, 85, 0.12);
+
+    --color-passive-success: var(--color-success-passive);
+    --color-passive-warning: var(--color-warning-passive);
+    --color-passive-danger: var(--color-danger-passive);
+
+    /* Sayfa Renkleri - Light Mode (Default) */
+    --app-body-bg: #EAE7E2;
+    --header-bg: #F6F4F0;
+    --sidebar-bg: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --text-primary: var(--brand-dark-gray);
+    --text-secondary: var(--brand-gray);
+    --border-color: #E0E0E0;
+
+    /* Buton Renkleri */
+    --btn-primary-bg: var(--brand-primary);
+    --btn-primary-color: var(--brand-white);
+    --btn-secondary-bg: var(--brand-white-gray);
+    --btn-secondary-color: var(--brand-gray);
+    --btn-third-bg: var(--brand-light-gray);
+    --btn-third-color: var(--brand-white);
+    --btn-outline-bg: var(--brand-white);
+    --btn-outline-color: var(--brand-gray);
+    --btn-outline-border-color: var(--brand-white-gray);
+
+    /* Input Renkleri */
+    --input-border-default: var(--brand-white-gray);
+    --input-border-focus: var(--brand-primary);
+    --input-border-error: var(--color-danger);
+    --input-bg-default: var(--brand-white);
+    --input-bg-error: #FFF4F4;
+    --input-bg-disabled: #F4F5F7;
+    --input-text: #4C4C4E;
+
+    /* Shadow */
+    --shadow-card: 0px 5px 20px rgba(0, 0, 0, 0.05);
+
+    /* Icon Sizes */
+    --icon-small: 14px;
+    --icon-medium: 18px;
+    --icon-large: 28px;
+    --icon-xlarge: 32px;
+
+    /* Radius */
+    --radius-default: 8px;
+    --radius-large: 16px;
+    --radius-circle: 50%;
+
+    /* Card */
+    --card-padding: 24px;
+    --card-radius: 8px;
+    --card-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    --card-gap: 8px;
+    --bs-card-bg: #FFFFFF;
+    --bs-card-height: 100%;
+    --bs-card-title-color: var(--brand-gray);
+    --bs-card-title-spacer: 4px;
+    --bs-card-text-color: var(--brand-gray);
+}
+
+/* Dark Mode Variables */
+body.dark {
+    --brand-primary: #00ADEF;
+    /* Keep primary unless specified otherwise */
+
+    /* Sayfa Renkleri - Dark Mode */
+    --app-body-bg: #121212;
+    --header-bg: #1E1E1E;
+    --sidebar-bg: #1E1E1E;
+    --card-bg: #2C2C2C;
+    --text-primary: #E0E0E0;
+    --text-secondary: #B0B0B0;
+    --border-color: #333333;
+
+    /* Buton Renkleri - Dark Mode */
+    --btn-secondary-bg: #333333;
+    --btn-secondary-color: #E0E0E0;
+    --btn-third-bg: #444444;
+    --btn-outline-bg: transparent;
+    --btn-outline-color: #E0E0E0;
+    --btn-outline-border-color: #444444;
+
+    /* Input Renkleri - Dark Mode */
+    --input-border-default: #444444;
+    --input-bg-default: #2C2C2C;
+    --input-bg-disabled: #1F1F1F;
+    --input-text: #E0E0E0;
+
+    /* Card overrides */
+    --bs-card-bg: #2C2C2C;
+    --bs-card-title-color: #E0E0E0;
+    --bs-card-text-color: #B0B0B0;
+    --shadow-card: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Global Transitions */
+body,
+.sidebar,
+.navbar,
+.card,
+.input,
+button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Grid System - Column Classes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 24px;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.666666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.666666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-11 {
+    flex: 0 0 auto;
+    width: 91.66666%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Custom Column Class used only for 5 columns */
+.col-lg-20 {
+    flex: 0 0 auto;
+    width: 20%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-60 {
+    flex: 0 0 auto;
+    width: 60%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-lg-40 {
+    flex: 0 0 auto;
+    width: 40%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: auto;
+}
+
+.col {
+    flex: 1 0 0;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography - Kılavuz kuralları */
+.display {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 4.375px;
+    overflow-wrap: break-word;
+    line-height: 21px;
+    text-align: start;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+    line-height: 21px;
+    text-align: start;
+}
+
+.menu-item {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.caption,
+.small {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Header menu popover */
+.header-menu {
+    position: absolute;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    z-index: 110;
+    min-width: 220px;
+}
+
+.header-menu .menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    background: transparent;
+    border: none;
+    color: #54565A;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.header-menu .menu-item:hover {
+    background: var(--header-bg);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 60px;
+    background-color: var(--header-bg);
+    z-index: 999;
+    transition: padding-left 0.3s ease, padding-right 0.3s ease;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 16px;
+}
+
+.navbar-hamburger {
+    display: none;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.language-selector {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 36px;
+}
+
+.theme-toggle .hamburger-btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle .hamburger-btn i {
+    line-height: 1;
+}
+
+/* Theme toggle visibility: default Light mode shows the first (Light) button */
+body:not(.dark) .theme-toggle button:first-child {
+    display: inline-flex;
+}
+
+body:not(.dark) .theme-toggle button:last-child {
+    display: none;
+}
+
+/* Dark mode shows the second (Dark) button */
+body.dark .theme-toggle button:first-child {
+    display: none;
+}
+
+body.dark .theme-toggle button:last-child {
+    display: inline-flex;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-email {
+    font-size: 14px;
+}
+
+.fullscreen-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen-btn i {
+    font-size: 16px;
+    color: #9A9B9D;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    transition: width 0.25s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 0;
+    min-height: 60px;
+    position: relative;
+}
+
+.mini-logo-container {
+    display: none;
+}
+
+.mini-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+}
+
+body.sidebar-mini .mini-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Hide mini logo when expanded or when mini is hovered (expanded preview) */
+body.sidebar-expanded .mini-logo-container {
+    display: none;
+}
+
+body.sidebar-mini .sidebar:hover .mini-logo-container {
+    display: none;
+}
+
+/* Sidebar hamburger placement (expanded: right aligned; mini: hidden) */
+body.sidebar-expanded .sidebar-header {
+    justify-content: flex-end;
+}
+
+body.sidebar-mini #sidebarToggle {
+    display: none;
+}
+
+/* In mini mode, show hamburger on hover and align right */
+body.sidebar-mini .sidebar:hover #sidebarToggle {
+    display: inline-flex;
+}
+
+body.sidebar-mini .sidebar:hover .sidebar-header {
+    justify-content: flex-end;
+}
+
+/* Sidebar logo: hidden in mini idle; shown centered in expanded and mini-hover */
+.sidebar-logo-container {
+    display: none;
+}
+
+.sidebar-logo {
+    width: 180px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Expanded: show logo centered, hamburger right via flex-end rule above */
+body.sidebar-expanded .sidebar-logo-container {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Mini hover: show logo centered */
+body.sidebar-mini .sidebar:hover .sidebar-logo-container {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-item i {
+    font-size: 16px;
+    color: #9A9B9D;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* 16px + 10px*2 = 36px overall */
+}
+
+.nav-item.active {
+    background-color: var(--btn-secondary-bg);
+}
+
+.nav-item.active i {
+    color: var(--brand-primary);
+}
+
+.nav-item:hover {
+    background-color: transparent;
+}
+
+/* Sidebar icon renkleri - Kılavuz kuralları */
+.sidebar .nav-item:not(.active) i {
+    color: #9A9B9D;
+}
+
+.sidebar .nav-item:hover i {
+    color: var(--brand-primary);
+}
+
+
+/* Alt menü stilleri */
+.nav-item-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    color: var(--text-primary);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-item-parent .nav-item-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-item-parent .nav-item-content i {
+    font-size: 16px;
+    color: #9A9B9D;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-item-parent.expanded .nav-item-content i {
+    color: var(--brand-primary);
+}
+
+.nav-item-parent:hover .nav-item-content i {
+    color: var(--brand-primary);
+}
+
+.nav-item-parent i.fa-chevron-down {
+    font-size: 12px;
+    color: #9A9B9D;
+    transition: transform 0.3s ease;
+}
+
+.nav-item-parent.expanded i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Mini sidebar için Store menüsü */
+body.sidebar-mini .nav-item-parent {
+    justify-content: center;
+    padding: 0;
+    height: 36px;
+}
+
+body.sidebar-mini .nav-item-parent .nav-item-content {
+    gap: 0;
+}
+
+body.sidebar-mini .nav-item-parent .nav-item-content i {
+    padding: 10px;
+}
+
+body.sidebar-mini .nav-item-parent .nav-item-content span {
+    display: none;
+}
+
+body.sidebar-mini .nav-item-parent i.fa-chevron-down {
+    display: none;
+}
+
+body.sidebar-mini .sidebar:hover .nav-item-parent {
+    justify-content: space-between;
+    padding: 12px 24px;
+    height: auto;
+}
+
+body.sidebar-mini .sidebar:hover .nav-item-parent .nav-item-content {
+    gap: 12px;
+}
+
+body.sidebar-mini .sidebar:hover .nav-item-parent .nav-item-content span {
+    display: inline;
+}
+
+body.sidebar-mini .sidebar:hover .nav-item-parent i.fa-chevron-down {
+    display: block;
+}
+
+.nav-submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 24px;
+    background-color: transparent;
+}
+
+.nav-submenu.show {
+    display: flex;
+}
+
+/* Mini sidebar için alt menü gizle */
+body.sidebar-mini .nav-submenu {
+    display: none !important;
+}
+
+body.sidebar-mini .sidebar:hover .nav-submenu.show {
+    display: flex !important;
+}
+
+.nav-submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.nav-submenu-item i {
+    padding-right: 8px;
+}
+
+.nav-submenu-item:hover {
+    background-color: var(--btn-secondary-bg);
+}
+
+.nav-submenu-item.active {
+    background-color: var(--btn-secondary-bg);
+    color: var(--brand-primary);
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-btn i {
+    font-size: 16px;
+    color: #9A9B9D;
+}
+
+body.drawer-open .navbar {
+    padding-right: var(--drawer-width, 420px);
+}
+
+body.drawer-open .main-content {
+    padding-right: var(--drawer-width, 420px);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: var(--app-body-bg);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Placeholder Font Family */
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+::-moz-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+:-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+:-moz-placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+.main-content {
+    padding: 0 16px 24px;
+    transition: padding-left 0.25s ease, padding-right 0.25s ease;
+}
+
+/* Page header styling */
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    padding: 76px 16px 12px;
+    /* below navbar */
+    transition: padding-left 0.25s ease;
+}
+
+.page-header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ===================================
+   SEKMELER (TABS)
+   =================================== */
+.tabs-container {
+    display: flex;
+    gap: 32px;
+    padding: 0 16px;
+    background-color: var(--app-body-bg);
+    border-bottom: 1px solid var(--border-color);
+    transition: padding-left 0.25s ease;
+    margin-bottom: 24px;
+}
+
+.tab-item {
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+.tab-item:hover {
+    color: #05ACEC;
+    text-decoration: underline;
+}
+
+.tab-item.active {
+    color: var(--brand-primary);
+    font-weight: 500;
+    border-bottom-color: var(--brand-primary);
+    text-decoration: none;
+}
+
+/* Sidebar responsive widths and collapsed behavior */
+/* Default widths per breakpoints */
+@media (min-width: 1025px) {
+    .sidebar {
+        width: 280px;
+    }
+
+    body.sidebar-expanded .navbar {
+        padding-left: 280px;
+    }
+
+    body.sidebar-expanded .main-content {
+        padding-left: 296px;
+    }
+
+    body.sidebar-expanded .page-header {
+        padding-left: 296px;
+    }
+
+    body.sidebar-expanded .tabs-container {
+        padding-left: 296px;
+    }
+
+    body.sidebar-mini .sidebar {
+        width: 72px;
+    }
+
+    body.sidebar-mini .navbar {
+        padding-left: 72px;
+    }
+
+    body.sidebar-mini .main-content {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .page-header {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .tabs-container {
+        padding-left: 88px;
+    }
+
+    /* Instant expansion on hover (no animation) */
+    body.sidebar-mini .sidebar {
+        transition: none;
+    }
+
+    body.sidebar-mini .sidebar:hover {
+        width: 280px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.navbar,
+    body.sidebar-mini .sidebar:hover~.main-content,
+    body.sidebar-mini .sidebar:hover~.page-header {
+        transition: none;
+    }
+
+    /* Overlay behavior: keep mini paddings even on hover */
+    body.sidebar-mini .sidebar:hover~.navbar {
+        padding-left: 72px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.main-content {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.page-header {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.tabs-container {
+        padding-left: 88px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+        width: 240px;
+    }
+
+    body.sidebar-expanded .navbar {
+        padding-left: 240px;
+    }
+
+    body.sidebar-expanded .main-content {
+        padding-left: 256px;
+    }
+
+    body.sidebar-expanded .page-header {
+        padding-left: 256px;
+    }
+
+    body.sidebar-expanded .tabs-container {
+        padding-left: 256px;
+    }
+
+    body.sidebar-mini .sidebar {
+        width: 72px;
+    }
+
+    body.sidebar-mini .navbar {
+        padding-left: 72px;
+    }
+
+    body.sidebar-mini .main-content {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .page-header {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .tabs-container {
+        padding-left: 88px;
+    }
+
+    /* Instant expansion on hover (no animation) */
+    body.sidebar-mini .sidebar {
+        transition: none;
+    }
+
+    body.sidebar-mini .sidebar:hover {
+        width: 240px;
+    }
+
+    /* Overlay behavior: keep mini paddings even on hover */
+    body.sidebar-mini .sidebar:hover~.navbar {
+        padding-left: 72px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.main-content {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.page-header {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.tabs-container {
+        padding-left: 88px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    body.sidebar-expanded .navbar {
+        padding-left: 200px;
+    }
+
+    body.sidebar-expanded .main-content {
+        padding-left: 216px;
+    }
+
+    body.sidebar-expanded .page-header {
+        padding-left: 216px;
+    }
+
+    body.sidebar-expanded .tabs-container {
+        padding-left: 216px;
+    }
+
+    body.sidebar-mini .sidebar {
+        width: 72px;
+    }
+
+    body.sidebar-mini .navbar {
+        padding-left: 72px;
+    }
+
+    body.sidebar-mini .main-content {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .page-header {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .tabs-container {
+        padding-left: 88px;
+    }
+
+    body.sidebar-expanded .hamburger-btn i {
+        font-size: 16px;
+        color: #9A9B9D;
+    }
+
+    body.sidebar-mini .nav-item {
+        justify-content: center;
+        padding: 0;
+        height: 36px;
+    }
+
+    body.sidebar-mini .nav-item i {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        /* 16px + 10px*2 = 36px overall */
+    }
+
+    .page-header i {
+        font-size: 16px;
+        color: #9A9B9D;
+    }
+
+    .user-info i {
+        font-size: 16px !important;
+        color: #9A9B9D !important;
+    }
+
+    body.sidebar-mini .sidebar {
+        transition: none;
+    }
+
+    body.sidebar-mini .sidebar:hover {
+        width: 200px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.navbar {
+        padding-left: 72px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.main-content {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.page-header {
+        padding-left: 88px;
+    }
+
+    body.sidebar-mini .sidebar:hover~.tabs-container {
+        padding-left: 88px;
+    }
+}
+
+/* Collapsed state moves sidebar off-screen and shows navbar hamburger */
+/* When sidebar is expanded, hide navbar hamburger; when mini, show it */
+body.sidebar-expanded .navbar-hamburger {
+    display: none;
+}
+
+body.sidebar-mini .navbar-hamburger {
+    display: inline-flex;
+}
+
+/* While hovering to expand, also hide navbar hamburger */
+body.sidebar-mini .sidebar:hover~.navbar .navbar-hamburger {
+    display: none;
+}
+
+/* Icon-only in mini; show labels on hover */
+body.sidebar-mini .nav-item span {
+    display: none;
+}
+
+body.sidebar-mini .sidebar:hover .nav-item span {
+    display: inline;
+}
+
+/* Hide logo in mini */
+body.sidebar-mini .sidebar-logo-container {
+    display: none;
+}
+
+/* ===================================
+   CONTENT SECTIONS
+   =================================== */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    height: var(--bs-card-height);
+    color: var(--bs-brand-white);
+    overflow-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: 0px;
+    border-radius: var(--radius-default);
+    box-shadow: rgba(76, 87, 125, 0.02) 0px 0px 20px 0px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    line-height: 21px;
+    text-align: start;
+}
+
+.card-header {
+    background-color: transparent;
+    box-sizing: border-box;
+    display: block;
+    padding: 24px 24px 4px 24px;
+    margin-bottom: 0px;
+    overflow-wrap: break-word;
+    border-bottom: 0px none;
+    border-radius: 0;
+    line-height: 21px;
+    text-align: start;
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--brand-gray);
+}
+
+.card-title {
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--brand-gray);
+    margin-top: 0px;
+    margin-bottom: var(--bs-card-title-spacer);
+}
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-light-gray);
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.card-body {
+    box-sizing: border-box;
+    display: block;
+    flex: 1 1 auto;
+    padding: 12px 24px 12px 24px;
+    overflow-wrap: break-word;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-gray);
+}
+
+.card-big-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--brand-dark-gray);
+    line-height: 1.2;
+}
+
+.card-link {
+    color: var(--brand-primary);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 16px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.text-muted {
+    color: var(--brand-light-gray);
+    font-size: 12.5px;
+}
+
+/* ===================================
+   BUTONLAR
+   =================================== */
+.btn {
+    appearance: button;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 21px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    vertical-align: middle;
+    gap: 4px;
+
+    /* Height */
+    height: 42px;
+
+    /* Width */
+    width: auto;
+    min-width: 80px;
+    max-width: 100%;
+
+    /* Border */
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    /* Padding */
+    padding: 10.8px 20px;
+    padding-top: 10.8px;
+    padding-bottom: 10.8px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* Box Shadow */
+    box-shadow: rgba(76, 87, 125, 0.02) 0px 0px 20px 0px;
+
+    /* Transition */
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-behavior: normal, normal, normal, normal;
+
+    /* Font properties */
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-optical-sizing: auto;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-emoji: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+
+    /* Text properties */
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    letter-spacing: normal;
+    word-spacing: 0px;
+
+
+    /* Other */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-color: rgb(232, 238, 243) rgb(255, 255, 255);
+}
+
+/* Column içindeki butonlar kolonun tamamına yayılsın */
+[class^="col-"]>.btn,
+[class*=" col-"]>.btn,
+[class^="col-"] .filter-field>.btn,
+[class*=" col-"] .filter-field>.btn {
+    width: 100%;
+}
+
+/* Column içinde sadece buton/dropdown varsa: yan yana eşit dağıt */
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn),
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown),
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn),
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown),
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn),
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown),
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn),
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown) {
+    display: flex;
+    gap: 8px;
+}
+
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn)>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn)>.dropdown,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown)>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown)>.dropdown,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn)>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn)>.dropdown,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown)>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown)>.dropdown,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn)>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn)>.dropdown,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown)>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown)>.dropdown,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn)>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn)>.dropdown,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown)>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown)>.dropdown {
+    flex: 1 1 0;
+    width: auto;
+}
+
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn)>.dropdown>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown)>.dropdown>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn)>.dropdown>.btn,
+[class^="col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown)>.dropdown>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .btn)>.dropdown>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .btn + .dropdown)>.dropdown>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .btn)>.dropdown>.btn,
+[class*=" col-"]:not(:has(> :not(.btn):not(.dropdown))):has(> .dropdown + .dropdown)>.dropdown>.btn {
+    width: 100%;
+}
+
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Primary Button - Ana butonlar, Kaydet, Giriş Yap, Onayla */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+    border: none;
+}
+
+.btn-primary i {
+    color: var(--btn-primary-color);
+}
+
+/* Secondary Button - Vazgeç, Geri Dön, İptal */
+.btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--brand-gray);
+    border: none;
+}
+
+.btn-secondary i {
+    color: var(--brand-gray);
+}
+
+/* Third Button - Koyu Gri */
+.btn-third {
+    background-color: var(--brand-gray);
+    color: var(--brand-white);
+    border: none;
+}
+
+.btn-third i {
+    color: var(--brand-white);
+}
+
+/* Success Button - Onay mesajları */
+.btn-success {
+    background-color: var(--color-success);
+    color: var(--brand-white);
+    border: none;
+}
+
+.btn-success i {
+    color: var(--brand-white);
+}
+
+/* Danger Button - Sil, Yasakla, Reddet */
+.btn-danger {
+    background-color: var(--color-danger);
+    color: var(--brand-white);
+    border: none;
+}
+
+.btn-danger i {
+    color: var(--brand-white);
+}
+
+/* Warning Button */
+.btn-warning {
+    background-color: var(--color-warning);
+    color: var(--brand-white);
+    border: none;
+}
+
+.btn-warning i {
+    color: var(--brand-white);
+}
+
+/* Outline Button - Filtrele, Dışa Aktar */
+.btn-outline {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-gray);
+    border: 1px solid var(--brand-white-gray);
+}
+
+.btn-outline i {
+    color: var(--brand-gray);
+}
+
+.btn-outline:hover {
+    background-color: var(--input-bg-disabled);
+}
+
+/* Outline Primary Button - Mavi Çerçeveli */
+.btn-outline-primary {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
+}
+
+.btn-outline-primary i {
+    color: var(--brand-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: rgba(0, 173, 239, 0.08);
+    border-color: var(--brand-primary);
+}
+
+/* Outline Secondary Button - Gri Çerçeveli */
+.btn-outline-secondary {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-light-gray);
+    border: 1px solid var(--brand-light-gray);
+}
+
+.btn-outline-secondary i {
+    color: var(--brand-light-gray);
+}
+
+.btn-outline-secondary:hover {
+    background-color: rgba(76, 76, 78, 0.08);
+    border-color: var(--brand-gray);
+}
+
+/* Outline Third Button - Koyu Gri Çerçeveli */
+.btn-outline-third {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-gray);
+    border: 1px solid var(--brand-gray);
+}
+
+.btn-outline-third i {
+    color: var(--brand-gray);
+}
+
+.btn-outline-third:hover {
+    background-color: rgba(76, 76, 78, 0.08);
+    border-color: var(--brand-gray);
+}
+
+/* Outline Success Button - Yeşil Çerçeveli */
+.btn-outline-success {
+    background-color: var(--btn-outline-bg);
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+.btn-outline-success i {
+    color: var(--color-success);
+}
+
+.btn-outline-success:hover {
+    background-color: rgba(40, 199, 111, 0.08);
+    border-color: var(--color-success);
+}
+
+/* Outline Danger Button - Kırmızı Çerçeveli */
+.btn-outline-danger {
+    background-color: var(--btn-outline-bg);
+    color: var(--color-danger);
+    border: 1px solid var(--color-danger);
+}
+
+.btn-outline-danger i {
+    color: var(--color-danger);
+}
+
+.btn-outline-danger:hover {
+    background-color: rgba(234, 84, 85, 0.08);
+    border-color: var(--color-danger);
+}
+
+/* Outline Warning Button - Turuncu Çerçeveli */
+.btn-outline-warning {
+    background-color: var(--btn-outline-bg);
+    color: var(--color-warning);
+    border: 1px solid var(--color-warning);
+}
+
+.btn-outline-warning i {
+    color: var(--color-warning);
+}
+
+.btn-outline-warning:hover {
+    background-color: rgba(255, 159, 67, 0.08);
+    border-color: var(--color-warning);
+}
+
+
+/* Action Button - Dashboard Hızlı İşlemler */
+.btn-action {
+    background-color: var(--brand-white);
+    color: var(--brand-dark-gray);
+    box-shadow: var(--shadow-card);
+    padding: 10.8px 20px;
+    font-size: 14px;
+    border: none;
+}
+
+.btn-action i {
+    color: var(--brand-dark-gray);
+    font-size: var(--icon-medium);
+}
+
+/* Link Button - Tümünü Gör, Linkler */
+.btn-link {
+    background-color: transparent;
+    color: var(--brand-primary);
+    padding: 4px 8px;
+    text-decoration: none;
+    width: auto;
+    min-width: auto;
+    border: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    opacity: 1;
+    transform: none;
+}
+
+.btn-link i {
+    color: var(--brand-primary);
+}
+
+/* Icon Button - Düzenle, Sil (Yuvarlak) */
+.btn-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.btn-icon i {
+    font-size: var(--icon-medium);
+}
+
+/* Icon Button - Primary (Mavi) */
+.btn-icon.btn-icon-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+}
+
+.btn-icon.btn-icon-primary i {
+    color: var(--btn-primary-color);
+}
+
+/* Icon Button - Secondary (Gri) */
+.btn-icon.btn-icon-secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-color);
+}
+
+.btn-icon.btn-icon-secondary i {
+    color: var(--btn-secondary-color);
+}
+
+/* Icon Button - Danger (Kırmızı) */
+.btn-icon.btn-icon-danger {
+    background-color: var(--color-danger);
+    color: var(--brand-white);
+}
+
+.btn-icon.btn-icon-danger i {
+    color: var(--brand-white);
+}
+
+/* Icon Button - Third (Koyu Gri) */
+.btn-icon.btn-icon-third {
+    background-color: var(--brand-gray);
+    color: var(--brand-white);
+}
+
+.btn-icon.btn-icon-third i {
+    color: var(--brand-white);
+}
+
+/* Icon Button - Outline (Gri Çerçeveli) */
+.btn-icon.btn-icon-outline {
+    background-color: transparent;
+    color: var(--brand-gray);
+    border: 1px solid var(--input-border-default);
+}
+
+.btn-icon.btn-icon-outline i {
+    color: var(--brand-gray);
+}
+
+.btn-icon.btn-icon-outline:hover {
+    background-color: var(--input-bg-disabled);
+}
+
+/* Icon Button - Outline Primary (Mavi Çerçeveli) */
+.btn-icon.btn-icon-outline-primary {
+    background-color: transparent;
+    color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
+}
+
+.btn-icon.btn-icon-outline-primary i {
+    color: var(--brand-primary);
+}
+
+.btn-icon.btn-icon-outline-primary:hover {
+    background-color: rgba(0, 173, 239, 0.08);
+    border-color: var(--brand-primary);
+}
+
+/* Icon Button - Outline Secondary (Gri Çerçeveli) */
+.btn-icon.btn-icon-outline-secondary {
+    background-color: transparent;
+    color: var(--btn-secondary-bg);
+    border: 1px solid var(--btn-secondary-bg);
+}
+
+.btn-icon.btn-icon-outline-secondary i {
+    color: var(--btn-secondary-bg);
+}
+
+.btn-icon.btn-icon-outline-secondary:hover {
+    background-color: rgba(224, 224, 224, 0.08);
+    border-color: var(--btn-secondary-bg);
+}
+
+/* Icon Button - Outline Third (Koyu Gri Çerçeveli) */
+.btn-icon.btn-icon-outline-third {
+    background-color: transparent;
+    color: var(--brand-gray);
+    border: 1px solid var(--brand-gray);
+}
+
+.btn-icon.btn-icon-outline-third i {
+    color: var(--brand-gray);
+}
+
+.btn-icon.btn-icon-outline-third:hover {
+    background-color: rgba(76, 76, 78, 0.08);
+    border-color: var(--brand-gray);
+}
+
+/* Icon Button - Outline Danger (Kırmızı Çerçeveli) */
+.btn-icon.btn-icon-outline-danger {
+    background-color: transparent;
+    color: var(--color-danger);
+    border: 1px solid var(--color-danger);
+}
+
+.btn-icon.btn-icon-outline-danger i {
+    color: var(--color-danger);
+}
+
+.btn-icon.btn-icon-outline-danger:hover {
+    background-color: rgba(234, 84, 85, 0.08);
+    border-color: var(--color-danger);
+}
+
+/* Icon Button - Success (Yeşil) */
+.btn-icon.btn-icon-success {
+    background-color: var(--color-success);
+    color: var(--brand-white);
+}
+
+.btn-icon.btn-icon-success i {
+    color: var(--brand-white);
+}
+
+/* Icon Button - Warning (Turuncu) */
+.btn-icon.btn-icon-warning {
+    background-color: var(--color-warning);
+    color: var(--brand-white);
+}
+
+.btn-icon.btn-icon-warning i {
+    color: var(--brand-white);
+}
+
+/* Icon Button - Outline Success (Yeşil Çerçeveli) */
+.btn-icon.btn-icon-outline-success {
+    background-color: transparent;
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+.btn-icon.btn-icon-outline-success:hover {
+    background-color: rgba(40, 199, 111, 0.08);
+    border-color: var(--color-success);
+}
+
+.btn-icon.btn-icon-outline-success i {
+    color: var(--color-success);
+}
+
+/* Icon Button - Outline Warning (Turuncu Çerçeveli) */
+.btn-icon.btn-icon-outline-warning {
+    background-color: transparent;
+    color: var(--color-warning);
+    border: 1px solid var(--color-warning);
+}
+
+.btn-icon.btn-icon-outline-warning:hover {
+    background-color: rgba(255, 159, 67, 0.08);
+    border-color: var(--color-warning);
+}
+
+.btn-icon.btn-icon-outline-warning i {
+    color: var(--color-warning);
+}
+
+/* ===================================
+   SQUARE ICON BUTTONS - Kare İkon Butonlar
+   =================================== */
+
+/* Square Icon Button - Normal butonlarla aynı radius (8px) */
+.btn-icon-square {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    padding: 0;
+    border-radius: var(--radius-default);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.btn-icon-square i {
+    font-size: var(--icon-medium);
+}
+
+/* Square Icon Button - Primary (Mavi) */
+.btn-icon-square.btn-icon-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+}
+
+.btn-icon-square.btn-icon-primary i {
+    color: var(--btn-primary-color);
+}
+
+/* Square Icon Button - Secondary (Gri) */
+.btn-icon-square.btn-icon-secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-color);
+}
+
+.btn-icon-square.btn-icon-secondary i {
+    color: var(--btn-secondary-color);
+}
+
+/* Square Icon Button - Danger (Kırmızı) */
+.btn-icon-square.btn-icon-danger {
+    background-color: var(--color-danger);
+    color: var(--brand-white);
+}
+
+.btn-icon-square.btn-icon-danger i {
+    color: var(--brand-white);
+}
+
+/* Square Icon Button - Third (Koyu Gri) */
+.btn-icon-square.btn-icon-third {
+    background-color: var(--brand-gray);
+    color: var(--brand-white);
+}
+
+.btn-icon-square.btn-icon-third i {
+    color: var(--brand-white);
+}
+
+/* Square Icon Button - Success (Yeşil) */
+.btn-icon-square.btn-icon-success {
+    background-color: var(--color-success);
+    color: var(--brand-white);
+}
+
+.btn-icon-square.btn-icon-success i {
+    color: var(--brand-white);
+}
+
+/* Square Icon Button - Warning (Turuncu) */
+.btn-icon-square.btn-icon-warning {
+    background-color: var(--color-warning);
+    color: var(--brand-white);
+}
+
+.btn-icon-square.btn-icon-warning i {
+    color: var(--brand-white);
+}
+
+/* Square Icon Button - Outline (Gri Çerçeveli) */
+.btn-icon-square.btn-icon-outline {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-gray);
+    border: 1px solid var(--btn-outline-border-color);
+}
+
+.btn-icon-square.btn-icon-outline i {
+    color: var(--brand-gray);
+}
+
+.btn-icon-square.btn-icon-outline:hover {
+    background-color: var(--input-bg-disabled);
+}
+
+/* Square Icon Button - Outline Primary (Mavi Çerçeveli) */
+.btn-icon-square.btn-icon-outline-primary {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
+}
+
+.btn-icon-square.btn-icon-outline-primary i {
+    color: var(--brand-primary);
+}
+
+.btn-icon-square.btn-icon-outline-primary:hover {
+    background-color: rgba(0, 173, 239, 0.08);
+    border-color: var(--brand-primary);
+}
+
+/* Square Icon Button - Outline Secondary (Gri Çerçeveli) */
+.btn-icon-square.btn-icon-outline-secondary {
+    background-color: var(--btn-outline-bg);
+    color: var(--btn-secondary-bg);
+    border: 1px solid var(--btn-secondary-bg);
+}
+
+.btn-icon-square.btn-icon-outline-secondary i {
+    color: var(--btn-secondary-bg);
+}
+
+.btn-icon-square.btn-icon-outline-secondary:hover {
+    background-color: rgba(224, 224, 224, 0.08);
+    border-color: var(--btn-secondary-bg);
+}
+
+/* Square Icon Button - Outline Third (Koyu Gri Çerçeveli) */
+.btn-icon-square.btn-icon-outline-third {
+    background-color: var(--btn-outline-bg);
+    color: var(--brand-gray);
+    border: 1px solid var(--brand-gray);
+}
+
+.btn-icon-square.btn-icon-outline-third i {
+    color: var(--brand-gray);
+}
+
+.btn-icon-square.btn-icon-outline-third:hover {
+    background-color: rgba(76, 76, 78, 0.08);
+    border-color: var(--brand-gray);
+}
+
+/* Square Icon Button - Outline Danger (Kırmızı Çerçeveli) */
+.btn-icon-square.btn-icon-outline-danger {
+    background-color: var(--btn-outline-bg);
+    color: var(--color-danger);
+    border: 1px solid var(--color-danger);
+}
+
+.btn-icon-square.btn-icon-outline-danger i {
+    color: var(--color-danger);
+}
+
+.btn-icon-square.btn-icon-outline-danger:hover {
+    background-color: rgba(234, 84, 85, 0.08);
+    border-color: var(--color-danger);
+}
+
+/* Square Icon Button - Outline Success (Yeşil Çerçeveli) */
+.btn-icon-square.btn-icon-outline-success {
+    background-color: var(--btn-outline-bg);
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+.btn-icon-square.btn-icon-outline-success:hover {
+    background-color: rgba(40, 199, 111, 0.08);
+    border-color: var(--color-success);
+}
+
+.btn-icon-square.btn-icon-outline-success i {
+    color: var(--color-success);
+}
+
+/* Square Icon Button - Outline Warning (Turuncu Çerçeveli) */
+.btn-icon-square.btn-icon-outline-warning {
+    background-color: var(--btn-outline-bg);
+    color: var(--color-warning);
+    border: 1px solid var(--color-warning);
+}
+
+.btn-icon-square.btn-icon-outline-warning:hover {
+    background-color: rgba(255, 159, 67, 0.08);
+    border-color: var(--color-warning);
+}
+
+.btn-icon-square.btn-icon-outline-warning i {
+    color: var(--color-warning);
+}
+
+/* Long Button - 2x width of normal button + gap */
+.btn-long {
+    min-width: calc(160px + 12px);
+}
+
+
+/* ===================================
+   İKON STİLLERİ VE BOYUTLARI
+   =================================== */
+
+/* Icon Sizes */
+.icon-small {
+    font-size: var(--icon-small);
+}
+
+.icon-medium {
+    font-size: var(--icon-medium);
+}
+
+.icon-large {
+    font-size: var(--icon-large);
+}
+
+.icon-xlarge {
+    font-size: var(--icon-xlarge);
+}
+
+/* Icon Colors */
+.icon-primary {
+    color: var(--brand-primary);
+}
+
+.icon-success {
+    color: var(--color-success);
+}
+
+.icon-danger {
+    color: var(--color-danger);
+}
+
+.icon-warning {
+    color: var(--color-warning);
+}
+
+.icon-dark {
+    color: var(--brand-dark-gray);
+}
+
+.icon-gray {
+    color: var(--brand-gray);
+}
+
+.icon-passive {
+    color: var(--brand-light-gray);
+}
+
+.icon-white {
+    color: var(--brand-white);
+}
+
+/* Icon Container (Yuvarlak arka planlar için) */
+.icon-container {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-circle);
+}
+
+.icon-container.primary {
+    background-color: var(--brand-primary);
+    color: var(--brand-white);
+}
+
+.icon-container.success {
+    background-color: var(--color-success);
+    color: var(--brand-white);
+}
+
+.icon-container.danger {
+    background-color: var(--color-danger);
+    color: var(--brand-white);
+}
+
+.icon-container.warning {
+    background-color: var(--color-warning);
+    color: var(--brand-white);
+}
+
+/* ===================================
+   DROPDOWN BUTONLAR
+   =================================== */
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    width: auto;
+    display: inline-block;
+}
+
+/* Column içindeki dropdown'lar kolonun tamamına yayılsın */
+[class^="col-"]>.dropdown,
+[class*=" col-"]>.dropdown {
+    width: 100%;
+    display: block;
+}
+
+[class^="col-"]>.dropdown>.btn,
+[class*=" col-"]>.dropdown>.btn {
+    width: 100%;
+}
+
+/* Dropdown Toggle Button - İkon sağda olacak */
+.dropdown-toggle {
+    justify-content: space-between;
+}
+
+.dropdown-toggle.dropdown-toggle-icon {
+    justify-content: center;
+}
+
+.dropdown-toggle.dropdown-toggle-icon::after {
+    display: none;
+}
+
+/* Dropdown Toggle için chevron ikonu */
+.dropdown-toggle i.fa-chevron-down {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown açıkken chevron döndürme */
+.dropdown-toggle[aria-expanded="true"] i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu - Butonun sağ alt tarafında açılacak */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 8px 0;
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: var(--brand-gray);
+    text-align: left;
+    list-style: none;
+    background-color: var(--card-bg);
+    background-clip: padding-box;
+    border: 1px solid var(--input-border-default);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu açık durumu */
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Dropdown Item */
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    clear: both;
+    font-weight: 400;
+    color: var(--brand-gray);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: var(--brand-dark-gray);
+    background-color: var(--input-bg-disabled);
+}
+
+.dropdown-item:active {
+    color: var(--brand-primary);
+    background-color: rgba(0, 173, 239, 0.08);
+}
+
+/* İkon butonlarda dropdown menü genişliği normal buton genişliği kadar olmalı */
+.dropdown .btn-icon~.dropdown-menu {
+    min-width: 80px;
+}
+
+/* Normal butonlarda dropdown menü buton genişliği kadar */
+.dropdown .btn:not(.btn-icon):not(.btn-long)~.dropdown-menu {
+    min-width: 160px;
+}
+
+/* Uzun butonlarda dropdown menü buton genişliği kadar */
+.dropdown .btn-long~.dropdown-menu {
+    width: 100%;
+    min-width: calc(20% + 12px);
+}
+
+
+/* ===================================
+   FORMS
+   =================================== */
+
+/* --- Input Group --- */
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-group .input-group-text {
+    order: -1;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(50, 81, 104);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--btn-secondary-bg);
+    border: 1px solid var(--input-border-default);
+    border-radius: 10px 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    height: 42px;
+}
+
+.ig-radius-left {
+    border-top-left-radius: var(--radius-default) !important;
+    border-bottom-left-radius: var(--radius-default) !important;
+}
+
+.ig-radius-right {
+    border-top-right-radius: var(--radius-default) !important;
+    border-bottom-right-radius: var(--radius-default) !important;
+}
+
+/* --- Inputs --- */
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-gray);
+}
+
+.form-check {
+    display: inline-flex;
+    align-items: center;
+    height: 42px;
+    gap: 8px;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--input-border-default);
+    border-radius: 4px;
+    background-color: var(--input-bg-default);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.form-check-input:hover {
+    border-color: var(--input-border-focus);
+}
+
+.form-check-input:focus {
+    outline: 0;
+    border-color: var(--input-border-focus);
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E");
+}
+
+.form-check-input[type="radio"] {
+    border-radius: 50%;
+}
+
+.form-check-input[type="radio"]:checked {
+    background-image: none;
+    background-color: var(--input-bg-default);
+    border-color: var(--brand-primary);
+}
+
+.form-check-input[type="radio"]:checked::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--brand-primary);
+    display: block;
+}
+
+.form-check-input:disabled {
+    background-color: var(--input-bg-disabled);
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.form-check-input:disabled+.form-check-label {
+    color: var(--brand-light-gray);
+    cursor: not-allowed;
+}
+
+.form-check-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-gray);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Checkbox içeren dropdown item */
+.dropdown-item-checkbox {
+    padding: 3px 8px;
+    margin: 0;
+}
+
+
+.form-control {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-gray);
+    background-color: var(--input-bg-default);
+    background-clip: padding-box;
+    border: 1px solid var(--input-border-default);
+    border-radius: var(--radius-default);
+    appearance: none;
+    transition: border-color 0.15s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    flex: 1 1 auto;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+
+
+/* --- Selects --- */
+
+.form-select {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 12px 44px 12px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--brand-gray);
+    background-color: var(--input-bg-default);
+    border: 1px solid var(--input-border-default);
+    border-radius: var(--radius-default);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-color 0.15s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    height: 42px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239A9B9D' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 12px 12px;
+}
+
+.form-select option {
+    color: var(--brand-gray);
+    background-color: var(--brand-white);
+}
+
+.form-select option:checked {
+    background-color: var(--input-bg-disabled);
+}
+
+.form-select option:disabled {
+    color: var(--brand-light-gray);
+}
+
+.form-select:hover {
+    border-color: var(--input-border-focus);
+}
+
+.form-select:focus {
+    color: var(--brand-gray);
+    background-color: var(--input-bg-default);
+    border-color: var(--input-border-focus);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select:disabled,
+.form-select[readonly] {
+    background-color: var(--input-bg-disabled);
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+/* --- Input Group Layout (Form Controls) --- */
+
+.input-group>.form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.input-group>.form-select {
+    position: relative;
+    flex: 0 0 auto;
+    width: clamp(80px, 18vw, 220px);
+    max-width: 220px;
+    min-width: 80px;
+}
+
+.form-control:focus {
+    color: rgb(50, 81, 104);
+    background-color: var(--input-bg-default);
+    border-color: var(--input-border-focus);
+    outline: 0;
+    box-shadow: none;
+}
+
+.input-group .input-group-text+.form-control:focus,
+.input-group .btn+.form-control:focus,
+.input-group .dropdown+.form-control:focus {
+    border-left-color: var(--input-border-focus);
+}
+
+.form-control::placeholder {
+    color: var(--brand-light-gray);
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: var(--input-bg-disabled);
+    opacity: 1;
+}
+
+
+/* Input Group Styles */
+.input-group {
+    gap: 0;
+}
+
+.input-group>.form-control,
+.input-group>.form-select,
+.input-group>.input-group-text,
+.input-group>.btn,
+.input-group>.dropdown>.btn {
+    height: 42px;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* Width rules */
+.input-group>.form-select,
+.input-group>.dropdown,
+.input-group>.btn:not(.btn-icon-square) {
+    flex: 0 0 20%;
+    width: 20%;
+}
+
+.input-group>.dropdown {
+    display: flex;
+}
+
+.input-group>.dropdown>.btn {
+    width: 100%;
+}
+
+.input-group>.btn.btn-icon-square {
+    flex: 0 0 42px;
+    width: 42px;
+    min-width: 42px;
+}
+
+.input-group>.form-control {
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.input-group .dropdown-menu {
+    top: 100%;
+    left: 0;
+    right: auto;
+}
+
+.input-group .dropdown-toggle::after {
+    display: none;
+}
+
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    padding: 10px 12px;
+    border: 1px solid var(--input-border-default);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.checkbox-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: rgb(50, 81, 104);
+    user-select: none;
+}
+
+/* Filter Card Expansion */
+.card {
+    transition: min-height 0.3s ease;
+}
+
+.card.expanded {
+    min-height: unset;
+}
+
+@media (max-width: 768px) {
+    #filter-btn {
+        width: 100%;
+    }
+
+    .filter-expanded-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-6,
+    .col-lg-8 {
+        width: 100%;
+    }
+}
+
+.filter-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-expanded {
+    display: none;
+    margin-top: 16px;
+}
+
+.card.expanded .filter-expanded {
+    display: block;
+}
+
+
+/* ===================================
+   TABLO (TABLE)
+   =================================== */
+
+.table {
+    border-collapse: collapse;
+    border-color: rgb(232, 238, 243);
+    box-sizing: border-box;
+    color: var(--brand-gray);
+    display: table;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    overflow-wrap: break-word;
+    text-align: start;
+    text-indent: 0px;
+    vertical-align: top;
+    width: 100%;
+    table-layout: auto;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+.table thead {
+    border-bottom: 0px solid rgb(232, 238, 243);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    color: var(--brand-gray);
+    display: table-header-group;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    overflow-wrap: break-word;
+    text-align: start;
+    vertical-align: bottom;
+}
+
+.table th {
+    background-color: transparent;
+    border-bottom: 1px solid #E0E0E0;
+    border-collapse: collapse;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    color: var(--brand-gray);
+    display: table-cell;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10.5px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    line-height: 15.75px;
+    overflow-wrap: break-word;
+    padding: 8px;
+    text-align: left;
+    text-indent: 0px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    vertical-align: bottom;
+    min-width: fit-content;
+    position: relative;
+}
+
+.table th::after {
+    content: '\f07e';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: var(--brand-gray);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: col-resize;
+}
+
+.table th::before {
+    content: '\f0b0';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: var(--brand-gray);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.table th:hover::after,
+.table th:hover::before {
+    opacity: 1;
+}
+
+.table th.filter-active::before {
+    color: var(--brand-primary);
+    opacity: 1;
+}
+
+/* Hide filter and resize icons for checkbox and actions columns */
+.table thead th[data-role="select"]::before,
+.table thead th[data-role="select"]::after,
+.table thead th[data-role="actions"]::before,
+.table thead th[data-role="actions"]::after {
+    display: none;
+}
+
+.table thead th[data-role="select"],
+.table thead th[data-role="actions"] {
+    cursor: default !important;
+}
+
+.table thead th[data-role="actions"] {
+    text-align: left;
+    padding-left: 18px;
+}
+
+
+.table tbody td:last-child .btn,
+.table tbody td:last-child button {
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+}
+
+/* Drag and Drop Styles */
+.table th.dragging {
+    opacity: 0.5;
+    background-color: #f0f0f0;
+    cursor: grabbing;
+}
+
+.table th.drag-over {
+    border-left: 3px solid var(--brand-primary);
+    background-color: rgba(0, 173, 239, 0.1);
+}
+
+.table th[draggable="true"]:not(:first-child) {
+    cursor: grab;
+}
+
+.table th[draggable="true"]:not(:first-child):active {
+    cursor: grabbing;
+}
+
+/* Column Filter Dropdown */
+.column-filter-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    border: 1px solid #E8EEF3;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    min-width: 200px;
+    z-index: 9999;
+    display: none;
+    margin-top: 4px;
+}
+
+.column-filter-dropdown.show {
+    display: block;
+}
+
+.column-filter-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    margin-bottom: 4px;
+}
+
+.column-filter-search i {
+    font-size: 14px;
+    color: #9A9B9D;
+}
+
+.column-filter-search-input {
+    flex: 1;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #4C4C4E;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.column-filter-search-input:focus {
+    border-color: var(--brand-primary);
+}
+
+.column-filter-search-input::placeholder {
+    color: #9A9B9D;
+}
+
+.column-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4C4C4E;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.column-filter-item:hover {
+    background-color: #F6F4F0;
+}
+
+.column-filter-item i {
+    font-size: 14px;
+    color: #9A9B9D;
+    width: 16px;
+    text-align: center;
+}
+
+.column-filter-divider {
+    height: 1px;
+    background-color: #E8EEF3;
+    margin: 8px 0;
+}
+
+.table tbody {
+    border-bottom: 0px solid rgb(232, 238, 243);
+    border-collapse: collapse;
+    border-top: none;
+    box-sizing: border-box;
+    color: var(--brand-gray);
+    display: table-row-group;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    overflow-wrap: break-word;
+    text-align: start;
+    vertical-align: top;
+}
+
+.table tr {
+    border-bottom: 0px solid rgb(232, 238, 243);
+    border-collapse: collapse;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px solid var(--brand-gray);
+    box-sizing: border-box;
+    color: var(--brand-gray);
+    display: table-row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: start;
+    vertical-align: middle;
+    height: 50px;
+}
+
+.table tbody th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    min-width: fit-content;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.table tbody tr:last-child th {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.table td {
+    background-color: transparent;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    color: var(--brand-gray);
+    display: table-cell;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 8px;
+    text-align: start;
+    text-indent: 0px;
+    vertical-align: middle;
+    min-width: fit-content;
+}
+
+/* Tablo aksiyon hücresindeki dropdown menünün kesilmemesi için */
+.table td:last-child {
+    overflow: visible;
+    position: relative;
+}
+
+.table td:last-child .dropdown {
+    position: relative;
+}
+
+.table td:last-child .dropdown-menu {
+    z-index: 2000;
+}
+
+.table-striped tbody tr:nth-of-type(odd) td {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 9999px inset;
+}
+
+.table-striped tbody tr:nth-of-type(odd) th {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 9999px inset;
+}
+
+.table-striped tbody tr:hover td,
+.table-striped tbody tr:hover th {
+    box-shadow: var(--btn-secondary-bg) 0px 0px 0px 9999px inset;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table-responsive {
+    overflow-y: hidden;
+}
+
+.dropdown-menu.dropdown-menu-portal {
+    position: fixed;
+    width: auto;
+    z-index: 10000;
+}
+
+.column-filter-dropdown.column-filter-dropdown-portal {
+    position: fixed;
+    z-index: 10001;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Table Action Column Buttons - No Borders */
+.table td .btn-icon-square.btn-icon-outline-primary,
+.table td .btn-icon-square.btn-icon-outline {
+    border: none;
+}
+
+.table td .btn-icon-square.btn-icon-outline-primary:hover,
+.table td .btn-icon-square.btn-icon-outline:hover {
+    border: none;
+}
+
+/* Status Cell - Center icons */
+.table td.status-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td.status-cell i {
+    font-size: 14px;
+}
+
+/* Status Icon - Active (Green) */
+.status-icon-active {
+    color: #28C76F;
+}
+
+/* Status Icon - Inactive (Light Green) */
+.status-icon-inactive {
+    color: rgba(40, 199, 111, 0.4);
+}
+
+/* ===================================
+   PAGINATION
+   =================================== */
+
+.pagination {
+    box-sizing: border-box;
+    color: rgb(50, 81, 104);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    padding-left: 0px;
+    text-align: start;
+}
+
+.page-item {
+    border: 0px none;
+    box-sizing: border-box;
+    color: rgb(50, 81, 104);
+    display: list-item;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0px;
+    overflow-wrap: break-word;
+    padding: 0px;
+    text-align: start;
+}
+
+.page-link {
+    background-color: transparent;
+    border: 0px none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgb(50, 81, 104);
+    cursor: pointer;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.25px;
+    font-weight: 400;
+    line-height: 18.375px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0px;
+    overflow-wrap: break-word;
+    padding: 6px 12px;
+    position: relative;
+    text-align: start;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page-link:hover {
+    background-color: rgba(0, 173, 239, 0.08);
+    color: var(--brand-primary);
+}
+
+.page-link:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 173, 239, 0.25);
+}
+
+.page-item.active .page-link {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+    border-color: var(--brand-primary);
+}
+
+.page-item.active .page-link:hover {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+}
+
+.pagination-select {
+    min-width: 80px;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+/* ===================================
+   COLUMN FILTER DROPDOWN
+   =================================== */
+
+
+/* Text Colors */
+.text-primary {
+    color: var(--brand-primary) !important;
+}
+
+.text-success {
+    color: var(--color-success) !important;
+}
+
+.text-danger {
+    color: var(--color-danger) !important;
+}
+
+.text-warning {
+    color: var(--color-warning) !important;
+}
+
+.text-dark {
+    color: var(--brand-dark-gray) !important;
+}
+
+.text-gray {
+    color: var(--brand-gray) !important;
+}
+
+.text-passive {
+    color: var(--brand-light-gray) !important;
+}
+
+.text-passive-success {
+    color: var(--color-passive-success) !important;
+}
+
+.text-passive-warning {
+    color: var(--color-passive-warning) !important;
+}
+
+.text-passive-danger {
+    color: var(--color-passive-danger) !important;
+}
+
+/* Background Colors */
+.bg-primary {
+    background-color: var(--brand-primary) !important;
+}
+
+.bg-success {
+    background-color: var(--color-success) !important;
+}
+
+.bg-danger {
+    background-color: var(--color-danger) !important;
+}
+
+.bg-warning {
+    background-color: var(--color-warning) !important;
+}
+
+.bg-white {
+    background-color: var(--brand-white) !important;
+}
+
+.bg-gray {
+    background-color: var(--input-bg-disabled) !important;
+}
+
+.bg-passive {
+    background-color: var(--brand-light-gray) !important;
+}
+
+.bg-passive-success {
+    background-color: var(--color-passive-success) !important;
+}
+
+.bg-passive-warning {
+    background-color: var(--color-passive-warning) !important;
+}
+
+.bg-passive-danger {
+    background-color: var(--color-passive-danger) !important;
+}
+
+/* Border Radius */
+.rounded {
+    border-radius: var(--radius-default) !important;
+}
+
+
+/* Shadows */
+.shadow {
+    box-shadow: var(--shadow-card) !important;
+}
+
+/* Display Utilities */
+.d-flex {
+    display: flex !important;
+}
+
+.d-inline-flex {
+    display: inline-flex !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* Flex Utilities */
+.flex-column {
+    flex-direction: column !important;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.gap-1 {
+    gap: 8px !important;
+}
+
+.gap-2 {
+    gap: 16px !important;
+}
+
+.gap-3 {
+    gap: 24px !important;
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.rotate--45 {
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+/* Spacing Utilities */
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-1 {
+    padding: 4px !important;
+}
+
+.p-2 {
+    padding: 8px !important;
+}
+
+.p-3 {
+    padding: 12px !important;
+}
+
+.p-4 {
+    padding: 16px !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pt-1 {
+    padding-top: 8px !important;
+}
+
+.pt-2 {
+    padding-top: 16px !important;
+}
+
+.pt-3 {
+    padding-top: 24px !important;
+}
+
+.pt-4 {
+    padding-top: 32px !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pb-1 {
+    padding-bottom: 8px !important;
+}
+
+.pb-2 {
+    padding-bottom: 16px !important;
+}
+
+.pb-3 {
+    padding-bottom: 24px !important;
+}
+
+.pb-4 {
+    padding-bottom: 32px !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pl-1 {
+    padding-left: 8px !important;
+}
+
+.pl-2 {
+    padding-left: 16px !important;
+}
+
+.pl-3 {
+    padding-left: 24px !important;
+}
+
+.pl-4 {
+    padding-left: 32px !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pr-1 {
+    padding-right: 8px !important;
+}
+
+.pr-2 {
+    padding-right: 16px !important;
+}
+
+.pr-3 {
+    padding-right: 24px !important;
+}
+
+.pr-4 {
+    padding-right: 32px !important;
+}
+
+.m--1 {
+    margin: -4px !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.m-1 {
+    margin: 8px !important;
+}
+
+.m-2 {
+    margin: 16px !important;
+}
+
+.m-3 {
+    margin: 24px !important;
+}
+
+.m-4 {
+    margin: 32px !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: 8px !important;
+}
+
+.mt-2 {
+    margin-top: 16px !important;
+}
+
+.mt-3 {
+    margin-top: 24px !important;
+}
+
+.mt-4 {
+    margin-top: 32px !important;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.mr-1 {
+    margin-right: 8px !important;
+}
+
+.mr-2 {
+    margin-right: 16px !important;
+}
+
+.mr-3 {
+    margin-right: 24px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 8px !important;
+}
+
+.mb-2 {
+    margin-bottom: 16px !important;
+}
+
+.mb-3 {
+    margin-bottom: 24px !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.ml-1 {
+    margin-left: 8px !important;
+}
+
+.ml-2 {
+    margin-left: 16px !important;
+}
+
+.ml-3 {
+    margin-left: 24px !important;
+}
+
+/* ===================================
+   DATA VISUALIZATION - Grafik Renkleri
+   =================================== */
+.chart-color-1 {
+    fill: var(--brand-primary) !important;
+    stroke: var(--brand-primary) !important;
+}
+
+.chart-color-2 {
+    fill: var(--brand-dark-gray) !important;
+    stroke: var(--brand-dark-gray) !important;
+}
+
+.chart-color-3 {
+    fill: var(--brand-gray) !important;
+    stroke: var(--brand-gray) !important;
+}
+
+.chart-color-4 {
+    fill: var(--color-success) !important;
+    stroke: var(--color-success) !important;
+}
+
+.chart-color-5 {
+    fill: var(--color-warning) !important;
+    stroke: var(--color-warning) !important;
+}
+
+.chart-color-6 {
+    fill: var(--color-danger) !important;
+    stroke: var(--color-danger) !important;
+}

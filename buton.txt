@@ -1,0 +1,255 @@
+Butonlarda kullanıcı özellikle belirtmediği müddetçe ikon butonlar kare kullanılır.
+Dropdown ikon butonlara dropdown-toggle-icon kullanılır.
+
+html kodları aşağıdaki gibidir.
+
+Butonlar
+               <button class="btn btn-primary mb-1">Primary</button>
+               <button class="btn btn-secondary mb-1">Secondary</button>
+               <button class="btn btn-third mb-1">Third</button>
+               <button class="btn btn-success mb-1">Success</button>
+               <button class="btn btn-danger mb-1">Danger</button>
+               <button class="btn btn-warning mb-1">Warning</button>
+               <button type="button" class="btn btn-action mb-1">Action</button>
+               <button type="button" class="btn btn-link mb-1">Link</button>
+İkonlu Butonlar
+               <button class="btn btn-primary mb-1"><i class="fa-solid fa-check"></i> Primary</button>
+               <button class="btn btn-secondary mb-1"><i class="fa-solid fa-arrow-left"></i> Secondary</button>
+               <button class="btn btn-third mb-1"><i class="fa-solid fa-circle"></i> Third</button>
+               <button class="btn btn-success mb-1"><i class="fa-solid fa-check-circle"></i> Success</button>
+               <button class="btn btn-danger mb-1"><i class="fa-solid fa-trash"></i> Danger</button>
+               <button class="btn btn-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i> Warning</button>
+               <button type="button" class="btn btn-action mb-1"><i class="fa-solid fa-plus"></i> Action</button>
+               <button type="button" class="btn btn-link mb-1"><i class="fa-solid fa-arrow-right"></i> İkonlu Link</button>
+Outline Butonlar
+               <button class="btn btn-outline mb-1">Outline</button>
+               <button class="btn btn-outline-primary mb-1">Primary</button>
+               <button class="btn btn-outline-secondary mb-1">Secondary</button>
+               <button class="btn btn-outline-third mb-1">Third</button>
+               <button class="btn btn-outline-success mb-1">Success</button>
+               <button class="btn btn-outline-danger mb-1">Danger</button>
+               <button class="btn btn-outline-warning mb-1">Warning</button>
+İkonlu Outline Butonlar
+               <button class="btn btn-outline mb-1"><i class="fa-solid fa-filter"></i> Outline</button>
+               <button class="btn btn-outline-primary mb-1"><i class="fa-solid fa-eye"></i> Primary</button>
+               <button class="btn btn-outline-secondary mb-1"><i class="fa-solid fa-gear"></i> Secondary</button>
+               <button class="btn btn-outline-third mb-1"><i class="fa-solid fa-bars"></i> Third</button>
+               <button class="btn btn-outline-success mb-1"><i class="fa-solid fa-check"></i> Success</button>
+               <button class="btn btn-outline-danger mb-1"><i class="fa-solid fa-xmark"></i> Danger</button>
+               <button class="btn btn-outline-warning mb-1"><i class="fa-solid fa-bell"></i> Warning</button>
+Kare İkon Butonlar
+                <button type="button" class="btn btn-icon-square btn-icon-primary mb-1"><i class="fa-solid fa-pen"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-secondary mb-1"><i class="fa-solid fa-arrow-left"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-third mb-1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-success mb-1"><i class="fa-solid fa-check"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-danger mb-1"><i class="fa-solid fa-trash"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline mb-1"><i class="fa-solid fa-filter"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline-primary mb-1"><i class="fa-solid fa-eye"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline-secondary mb-1"><i class="fa-solid fa-gear"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline-third mb-1"><i class="fa-solid fa-bars"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline-danger mb-1"><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline-success mb-1"><i class="fa-solid fa-file-excel"></i></button>
+                <button type="button" class="btn btn-icon-square btn-icon-outline-warning mb-1"><i class="fa-solid fa-bell"></i></button>
+Daire İko Butonlar
+                <button type="button" class="btn btn-icon btn-icon-primary mb-1"><i class="fa-solid fa-pen"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-secondary mb-1"><i class="fa-solid fa-arrow-left"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-third mb-1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-success mb-1"><i class="fa-solid fa-check"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-danger mb-1"><i class="fa-solid fa-trash"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline mb-1"><i class="fa-solid fa-filter"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline-primary mb-1"><i class="fa-solid fa-eye"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline-secondary mb-1"><i class="fa-solid fa-gear"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline-third mb-1"><i class="fa-solid fa-bars"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline-danger mb-1"><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline-success mb-1"><i class="fa-solid fa-file-excel"></i></button>
+                <button type="button" class="btn btn-icon btn-icon-outline-warning mb-1"><i class="fa-solid fa-bell"></i></button>
+Uzun Butonlar
+               <button class="btn btn-long btn-primary mb-1">Long Primary Button</button>
+               <button class="btn btn-long btn-secondary mb-1">Long Secondary Button</button>
+               <button class="btn btn-long btn-third mb-1">Long Third Button</button>
+               <button class="btn btn-long btn-success mb-1">Long Success Button</button>
+               <button class="btn btn-long btn-danger mb-1">Long Danger Button</button>
+               <button class="btn btn-long btn-warning mb-1">Long Warning Button</button>
+İkonlu Uzun Butonlar
+               <button class="btn btn-long btn-primary mb-1"><i class="fa-solid fa-check"></i> Long Primary with Icon</button>
+               <button class="btn btn-long btn-secondary mb-1"><i class="fa-solid fa-arrow-left"></i> Long 2nd. with Icon</button>
+               <button class="btn btn-long btn-third mb-1"><i class="fa-solid fa-circle"></i> Long Third with Icon</button>
+               <button class="btn btn-long btn-success mb-1"><i class="fa-solid fa-plus"></i> Long Success with Icon</button>
+               <button class="btn btn-long btn-danger mb-1"><i class="fa-solid fa-trash"></i> Long Danger with Icon</button>
+               <button class="btn btn-long btn-warning mb-1"><i class="fa-solid fa-exclamation-triangle"></i> Long Warning with Icon</button>
+Outline Uzun Butonlar
+               <button class="btn btn-long btn-outline mb-1">Long Outline Button</button>
+               <button class="btn btn-long btn-outline-primary mb-1">Long Outline Primary Button</button>
+               <button class="btn btn-long btn-outline-secondary mb-1">Long Outline Secondary Button</button>
+               <button class="btn btn-long btn-outline-third mb-1">Long Outline Third Button</button>
+               <button class="btn btn-long btn-outline-success mb-1">Long Outline Success Button</button>
+               <button class="btn btn-long btn-outline-danger mb-1">Long Outline Danger Button</button>
+               <button class="btn btn-long btn-outline-warning mb-1">Long Outline Warning Button</button>
+İkonlu Outline Uzun Butonlar
+               <button class="btn btn-long btn-outline mb-1"><i class="fa-solid fa-filter"></i> Long Outline with Icon</button>
+               <button class="btn btn-long btn-outline-primary mb-1"><i class="fa-solid fa-eye"></i> Long Outline Primary with Icon</button>
+               <button class="btn btn-long btn-outline-secondary mb-1"><i class="fa-solid fa-gear"></i> Long Outline Secondary with Icon</button>
+               <button class="btn btn-long btn-outline-third mb-1"><i class="fa-solid fa-bars"></i> Long Outline Third with Icon</button>
+               <button class="btn btn-long btn-outline-success mb-1"><i class="fa-solid fa-check"></i> Long Outline Success with Icon</button>
+               <button class="btn btn-long btn-outline-danger mb-1"><i class="fa-solid fa-xmark"></i> Long Outline Danger with Icon</button>
+               <button class="btn btn-long btn-outline-warning mb-1"><i class="fa-solid fa-bell"></i> Long Outline Warning with Icon</button>
+
+Dropdown Butonlar
+               <div class="dropdown">
+                   <button
+                       class="btn btn-primary dropdown-toggle dropdown-toggle-text"
+                       type="button"
+                       id="dropdownMenuButton1"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false"
+                   >
+                       Primary Dropdown <i class="fa-solid fa-chevron-down"></i>
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+               </div>
+
+               <div class="dropdown">
+                   <button
+                       class="btn btn-long btn-outline dropdown-toggle dropdown-toggle-text"
+                       type="button"
+                       id="dropdownMenuButton2"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false"
+                   >
+                       Long Outline Dropdown <i class="fa-solid fa-chevron-down"></i>
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+               </div>
+
+               <div class="dropdown">
+                   <button
+                       class="btn btn-icon btn-icon-secondary dropdown-toggle dropdown-toggle-icon"
+                       type="button"
+                       id="dropdownMenuButton3"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false"
+                   >
+                       <i class="fa-solid fa-chevron-down"></i>
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+               </div>
+
+Checkbox Dropdown Buton
+               <div class="dropdown">
+                          <button id="filter-dropdown-btn" class="btn btn-icon-square btn-icon-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Sütunları Göster/Gizle" aria-label="Sütunları Göster/Gizle">
+                              <i class="fa-solid fa-gear"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-columns">
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="0" disabled>
+                                      <span>Seçim</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="1">
+                                      <span>First</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="2">
+                                      <span>Last</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="3">
+                                      <span>Handle</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="4">
+                                      <span>Email</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="5">
+                                      <span>Phone</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="6">
+                                      <span>City</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="7">
+                                      <span>Country</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="8">
+                                      <span>Department</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="9">
+                                      <span>Status</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="10">
+                                      <span>Position</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="11">
+                                      <span>Salary</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="12">
+                                      <span>Start Date</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" data-column="13">
+                                      <span>Manager</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" data-column="14">
+                                      <span>Notes</span>
+                                  </label>
+                              </li>
+                              <li class="dropdown-item-checkbox">
+                                  <label>
+                                      <input type="checkbox" checked data-column="15" disabled>
+                                      <span>Actions</span>
+                                  </label>
+                              </li>
+                          </ul>
+                      </div>
+
